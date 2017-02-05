@@ -92,3 +92,4 @@ ENV/
 
 # user defined
 NetEaseMusicApi-master/
+*.out

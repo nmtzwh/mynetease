@@ -1,0 +1,13 @@
+{% if playlists %}
+    <ul class="nav nav-sidebar" id="sideNavPlaylist">
+    {% for plist in playlists %}
+      {% if plist.id == playlist.id  %}
+      <li><a href="#" data-playlistid="{{ plist.id }}" class="active">{{ plist.label }}</a></li>
+    {% else %}
+      <li><a href="#" data-playlistid="{{ plist.id }}" >{{ plist.label }}</a></li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No Playlists are available.</p>
+{% endif %}

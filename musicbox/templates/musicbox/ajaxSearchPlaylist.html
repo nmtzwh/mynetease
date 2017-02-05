@@ -1,0 +1,22 @@
+{% if playlists %}
+  <div class="table-responsive">
+    <table class="table table-hover" id="searchReList">
+      <thead>
+        <tr class="clickable-row">
+          <th id="play_action">#</th>
+          <th id="Title"> Label </th>
+          <th id="Artist"> Creator </th>
+        </tr>
+      </thead>
+      <tbody>
+          {% for plist in playlists %}
+          <tr class="clickable-row">
+            <td data-playlistid="{{plist.playlist_netease_id}}">{{forloop.counter}}</td>
+            <td>{{plist.playlists_name}}</td>
+            <td>{{plist.creator_name}}</td>
+          </tr>
+          {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endif %}

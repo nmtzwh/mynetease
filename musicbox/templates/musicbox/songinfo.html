@@ -1,0 +1,9 @@
+<h1>{{ song.song_name }}</h1>
+
+<ul>
+
+    <li>{{ song.song_name }} -- {{ song.artist_name }} in {{ song.album_name }}</li>
+
+</ul>
+
+<a href="{% url 'musicbox:playlist' song.playlist.id %}">Return to playlist</a>

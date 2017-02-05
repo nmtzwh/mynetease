@@ -1,0 +1,269 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#373A3C">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% block extrahead %}{% endblock %}
+    <title>{% block title %}Base site{% endblock %}</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark navbar-fixed-top bg-inverse" id="topnav">
+      <a class="navbar-brand button" href="#" data-toggle=".container-new" id="sidebar-toggle">NetEase Pi</a>
+      <button class="navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="collapse" data-target="#navbar">
+        &#8801;<!-- &#8801;&#9776; -->
+      </button>
+      <div class="collapse navbar-toggleable-xs" id="navbar">
+        <ul class="nav navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link" href="#" id="showplaylist" data-toggle="modal" data-target="#playlistModal">Playlists</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Github</a>
+          </li>
+          <li class="nav-item pull-xs-right">
+            <form action="{% url 'musicbox:search' %}" method="post">
+              {% csrf_token %}
+              <input type="text" class="form-control" name="searchStr" placeholder="Search...">
+            </form>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+    <div class="container-new">
+      <div id="sidebar">
+        {% block sidebar %}
+        <!-- <ul class="nav nav-sidebar">
+        <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Reports</a></li>
+        <li><a href="#">Analytics</a></li>
+        <li><a href="#">Export</a></li>
+        </ul> -->
+        {% endblock %}
+      </div>
+      <div class="main-content">
+          <div class="swipe-area"></div>
+          <a href="#" data-toggle=".container-new" id="sidebar-toggle">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </a>
+          <div class="content">
+            {% block listname %}{% endblock %}
+            {% block mainlist %}
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Header</th>
+                    <th>Header</th>
+                    <th>Header</th>
+                    <th>Header</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1,001</td>
+                    <td>Lorem</td>
+                    <td>ipsum</td>
+                    <td>dolor</td>
+                    <td>sit</td>
+                  </tr>
+                  <tr>
+                    <td>1,002</td>
+                    <td>amet</td>
+                    <td>consectetur</td>
+                    <td>adipiscing</td>
+                    <td>elit</td>
+                  </tr>
+                  <tr>
+                    <td>1,003</td>
+                    <td>Integer</td>
+                    <td>nec</td>
+                    <td>odio</td>
+                    <td>Praesent</td>
+                  </tr>
+                  <tr>
+                    <td>1,003</td>
+                    <td>libero</td>
+                    <td>Sed</td>
+                    <td>cursus</td>
+                    <td>ante</td>
+                  </tr>
+                  <tr>
+                    <td>1,004</td>
+                    <td>dapibus</td>
+                    <td>diam</td>
+                    <td>Sed</td>
+                    <td>nisi</td>
+                  </tr>
+                  <tr>
+                    <td>1,005</td>
+                    <td>Nulla</td>
+                    <td>quis</td>
+                    <td>sem</td>
+                    <td>at</td>
+                  </tr>
+                  <tr>
+                    <td>1,006</td>
+                    <td>nibh</td>
+                    <td>elementum</td>
+                    <td>imperdiet</td>
+                    <td>Duis</td>
+                  </tr>
+                  <tr>
+                    <td>1,007</td>
+                    <td>sagittis</td>
+                    <td>ipsum</td>
+                    <td>Praesent</td>
+                    <td>mauris</td>
+                  </tr>
+                  <tr>
+                    <td>1,008</td>
+                    <td>Fusce</td>
+                    <td>nec</td>
+                    <td>tellus</td>
+                    <td>sed</td>
+                  </tr>
+                  <tr>
+                    <td>1,009</td>
+                    <td>augue</td>
+                    <td>semper</td>
+                    <td>porta</td>
+                    <td>Mauris</td>
+                  </tr>
+                  <tr>
+                    <td>1,010</td>
+                    <td>massa</td>
+                    <td>Vestibulum</td>
+                    <td>lacinia</td>
+                    <td>arcu</td>
+                  </tr>
+                  <tr>
+                    <td>1,011</td>
+                    <td>eget</td>
+                    <td>nulla</td>
+                    <td>Class</td>
+                    <td>aptent</td>
+                  </tr>
+                  <tr>
+                    <td>1,012</td>
+                    <td>taciti</td>
+                    <td>sociosqu</td>
+                    <td>ad</td>
+                    <td>litora</td>
+                  </tr>
+                  <tr>
+                    <td>1,013</td>
+                    <td>torquent</td>
+                    <td>per</td>
+                    <td>conubia</td>
+                    <td>nostra</td>
+                  </tr>
+                  <tr>
+                    <td>1,014</td>
+                    <td>per</td>
+                    <td>inceptos</td>
+                    <td>himenaeos</td>
+                    <td>Curabitur</td>
+                  </tr>
+                  <tr>
+                    <td>1,015</td>
+                    <td>sodales</td>
+                    <td>ligula</td>
+                    <td>in</td>
+                    <td>libero</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            {% endblock %}
+          </div>
+      </div>
+    </div>
+
+
+
+{% block modal %}
+<div class="modal fade" id="playlistModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Add new playlist</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+
+{% block footer %}
+    <footer class="navbar-fixed-bottom footer">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav nav-justified">
+          <li class="nav-item active">
+            <button class="nav-link btn btn-info" id="play_btn">Play</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link btn btn-warning" id="stop_btn">Stop</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link btn btn-danger" id="delete_btn">Del</button>
+          </li>
+        </ul>
+      </div>
+    </footer>
+{% endblock %}
+
+
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="{% static 'js/tether.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/jquery.touchSwipe.min.js' %}"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    // $(window).load(function(){
+      $("[data-toggle]").click(function() {
+        var toggle_el = $(this).data("toggle");
+        $(toggle_el).toggleClass("open-sidebar");
+      });
+       $(".swipe-area").swipe({
+            swipeStatus:function(event, phase, direction, distance, duration, fingers)
+                {
+                    if (phase=="move" && direction =="right") {
+                         $(".container-new").addClass("open-sidebar");
+                         return false;
+                    }
+                    if (phase=="move" && direction =="left") {
+                         $(".container-new").removeClass("open-sidebar");
+                         return false;
+                    }
+                }
+        });
+    // });
+    </script>
+    {% block extratail %}{% endblock %}
+  </body>
+</html>

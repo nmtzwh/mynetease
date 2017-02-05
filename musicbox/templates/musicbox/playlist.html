@@ -1,0 +1,416 @@
+{% extends "musicbox/base.html" %}
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<!-- <form action="{% url 'musicbox:play' playlist.id %}" method="post">
+{% csrf_token %}
+{% for song in playlist.song_set.all %}
+<input type="radio" name="song" id="song{{ forloop.counter }}" value="{{ song.id }}" />
+<label for="song{{ forloop.counter }}">{{ song.song_name }}</label><br />
+{% endfor %}
+<input type="submit" value="play" />
+</form> -->
+
+
+{% block title %}Netease Music Simple{% endblock %}
+
+{% block sidebar %}
+{% if playlists %}
+<ul class="nav nav-sidebar" id="sideNavPlaylist">
+  {% for plist in playlists %}
+  {% if plist.id == playlist.id  %}
+  <li><a href="#" data-playlistid="{{ plist.id }}" class="active">{{ plist.label }}</a></li>
+  {% else %}
+  <li><a href="#" data-playlistid="{{ plist.id }}" >{{ plist.label }}</a></li>
+  {% endif %}
+  {% endfor %}
+</ul>
+{% else %}
+<p>No Playlists are available.</p>
+{% endif %}
+{% endblock %}
+
+<!-- start playlist details -->
+{% block listname %}
+<div id="titleblock">
+  <h4 class="hidden-xs-down"><stong data-toggle="tooltip" data-placement="bottom" title="{{ playlist.comment }}">{{ playlist.label }} </strong></h4>
+    <p class="text-xs-right hidden-xs-down">{{ playlist.create_date }} </p>
+  </div>
+  {% endblock %}
+
+  {% block mainlist %}
+  <div class="table-responsive">
+    <table class="table table-hover" id="songlist">
+      <thead>
+        <tr class="clickable-row">
+          <th id="play_action" class="hidden-xs-down">#</th>
+          <th id="Title"> Title </th>
+          <th id="Artist"> Artist </th>
+          <th id="Album" class="hidden-xs-down"> Album </th>
+          <th id="Link" class="hidden-sm-down"> Link </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for song in playlist.song_set.all reversed %}
+        <tr class="clickable-row">
+          <td data-songid="{{song.id}}" class="hidden-xs-down">{{forloop.counter}}</td>
+          <td>{{song.song_name}}</td>
+          <td>{{song.artist_name}}</td>
+          <td class="hidden-xs-down">{{song.album_name}}</td>
+          <td class="hidden-sm-down"><a href="http://music.163.com/#/song?id={{ song.netease_id}}" target="_blank">Netease</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="audio" hidden="hidden">
+      <audio id="hidden-song" src="" type="audio/mpeg"></audio>
+  </div>
+  {% endblock %}
+
+
+  {% block modal %}
+  <div class="modal fade" id="playlistModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Add new playlist</h4>
+        </div>
+        <div class="modal-body">
+          <form method="post" action="{% url 'musicbox:addplaylist' %}" id="playlist-form">
+            {% csrf_token %}
+            <div class="form-group">
+              <label for="playlist-name" class="form-control-label">Label / Search terms:</label>
+              <input type="text" class="form-control" id="playlist-name" name="playlist_label" required>
+            </div>
+            <div class="form-group">
+              <label for="comment-text" class="form-control-label">Comment:</label>
+              <textarea class="form-control" id="comment-text" name="playlist_comment" required></textarea>
+            </div>
+            <div class="form-group hidden-xs-up">
+              <input type="text" class="form-control" id="playlist-type" name="playlist_type" value="new">
+            </div>
+            <div class="form-group hidden-xs-up">
+              <input type="text" class="form-control" id="playlist-searchReId" name="playlist_searchReId" value="">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success" id="search-playlist">Search</button>
+          <button type="button" class="btn btn-primary" id="submit-playlist">Add</button>
+        </div>
+        <!-- search playlists results part -->
+        <div class="modal-extrainfo"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="songModal" tabindex="-1" role="dialog" aria-labelledby="mySongModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="mySongModalLabel">Search Results</h4>
+        </div>
+        <div class="modal-body">
+          <form id="addsongForm" method="post">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger">Add</button>
+            <div class="table-responsive">
+              <table class="table table-hover" id="searchSonglist">
+              </table>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock %}
+
+  {% block extratail %}
+  <script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  })
+
+  // audio element
+  var audio = $("audio#hidden-song")[0];
+  var firstLog = true;
+  var shuffle = false;
+  var playing = false;
+
+  // music list:
+  var SongInfo = [
+    {% for song in playlist.song_set.all reversed %}
+    {
+      "title" : "{{song.song_name}}",
+      "artist" : "{{song.artist_name}}",
+      "source" : "{{song.mp3_url}}",
+      "songid" : "{{song.id}}",
+      "status" : "live"
+    },
+    {% endfor %}
+  ];
+  var SongInfo_new = undefined;
+
+  // generate playlist html
+  var songTotal = SongInfo.length;
+
+  // select song to play first
+  var song_play = 0;
+  // audio.src = SongInfo[song_play].source;
+
+  $('#songlist').on('click', '.clickable-row', function(event) {
+    // change list if not current playlist
+    firstLog = false;
+    changeList();
+    // find clicked song
+    $(this).addClass('selected-song').siblings().removeClass('selected-song');
+    song_play = Number($(this).find('td:first').html()) - 1;
+    // song_selected = $(this).find('td:first').data('songid');
+    // click to play
+    audio.src = SongInfo[song_play].source;
+    audioPlay();
+  });
+
+  $('#play_btn').click(function() {
+    if (playing){
+      audio.pause();
+      playing = false;
+      $(this).find($(".fa")).removeClass('fa-pause').addClass('fa-play');
+      $("#playIndicator").html("<p>Paused: "+SongInfo[song_play].title+" - "+SongInfo[song_play].artist+"</p>");
+    }else{
+      if (firstLog){
+        audio.src = SongInfo[song_play].source;
+        firstLog = false;
+      }
+      audioPlay();
+    }
+  });
+
+  $('#next_btn').click(function() {
+    playNext();
+  });
+
+  $('#random_btn').click(function() {
+    if (shuffle) {
+      shuffle = false;
+    }else{
+      shuffle = true;
+    }
+  });
+
+  // hide indicator when clicked
+  $('#playIndicator').click(function() {
+    $(this).hide();
+  });
+
+  // continue playing next song if current song is ended
+  audio.addEventListener('ended',function(){
+    if (! firstLog){
+      playNext();
+    }
+  },false);
+
+  // if song is unaccesiable
+  audio.addEventListener('error',function(){
+    if (! firstLog){
+      $.ajax({
+        url: '{% url 'musicbox:deleteSong' %}',
+        method: 'GET', // or another (GET), whatever you need
+        data: {
+          song_id: SongInfo[song_play].songid, // data you need to pass to your function
+        },
+        success: function (response) {
+          res = JSON.parse(response);  // Get the results sended from ajax to here
+          if (res.error) { // If the function fails
+            // Error
+            console.log('Delete failed! ');
+          } else {  // Success
+            $('td[data-songid=' + res.song_id + ']').parent().hide();
+            SongInfo[song_play].status = "dead";
+            playNext();
+          }
+        }
+      });
+    }
+  },false);
+
+  function audioPlay(){
+    audio.play();
+    playing = true;
+    $('#play_btn').find($(".fa")).removeClass('fa-play').addClass('fa-pause');
+    // indicator
+    $("#playIndicator").html("<p>Now Playing: "+SongInfo[song_play].title+" - "+SongInfo[song_play].artist+"</p>");
+    $("#playIndicator").show();
+  }
+
+  function playNext(){
+    if (!shuffle){
+      while (true){
+        song_play = song_play == songTotal-1 ? 0 : song_play+1;
+        if (SongInfo[song_play].status === "live"){
+          audio.src = SongInfo[song_play].source;
+          break;
+        }
+      }
+    }else{
+      while (true){
+        song_play = parseInt(Math.random() * songTotal);
+        if (SongInfo[song_play].status === "live"){
+          audio.src = SongInfo[song_play].source;
+          break;
+        }
+      }
+    }
+    audioPlay();
+  }
+
+  function changeList(){
+    if (SongInfo_new){
+      SongInfo = SongInfo_new;
+      song_play = 0;
+      audio.src = SongInfo[song_play].source;
+      songTotal = SongInfo.length;
+    }
+  }
+
+  $('#delete_btn').click(function() {
+    $.ajax({
+      url: '{% url 'musicbox:deleteSong' %}',
+      method: 'GET', // or another (GET), whatever you need
+      data: {
+        song_id: SongInfo[song_play].songid, // data you need to pass to your function
+      },
+      success: function (response) {
+        res = JSON.parse(response);  // Get the results sended from ajax to here
+        if (res.error) { // If the function fails
+          // Error
+          console.log('Delete failed! ');
+        } else {  // Success
+          $('td[data-songid=' + res.song_id + ']').parent().hide();
+          SongInfo[song_play].status = "dead";
+          playNext();
+        }
+      }
+    });
+  });
+
+  // submit add playlist form or search for online playlists
+  $('#submit-playlist').click(function(){
+    $('#playlist-form').submit();
+  });
+
+  $('#search-playlist').click(function(){
+    var searchStrList = $('#playlist-name').val();
+    $.ajax({
+      method: 'GET',
+      url: '{% url 'musicbox:searchPlaylist' %}',
+      data: {'searchStrList': searchStrList},
+      success : function(data) {
+        $('.modal-extrainfo').html(data);
+        $('#searchReList').on('click', '.clickable-row', function(event) {
+          console.log('click');
+          $('#playlist-name').val($(this).find('td:nth-child(2)').html());
+          $('#comment-text').val('From online user\'s playlist. Creator: ' + $(this).find('td:nth-child(3)').html());
+          $('#playlist-type').val('user');
+          $('#playlist-searchReId').val($(this).find('td:first').data('playlistid'));
+        });
+      }
+    });
+  });
+
+  $('#playlistModal').on('hidden.bs.modal', function (e) {
+    $('.modal-extrainfo').html('');
+    $('#playlist-name').val('');
+    $('#comment-text').val('');
+    $('#playlist-type').val('new');
+    $('#playlist-searchReId').val('');
+  });
+
+  $('body').on('click','#sideNavPlaylist a',function(){
+    // console.log($(this).data('playlistid'));
+    $.ajax({
+      method: 'GET',
+      url: '{% url 'musicbox:changePlaylist' %}',
+      data: {'pid': $(this).data('playlistid')},
+      success : function(response){
+        res = JSON.parse(response);
+        $('#titleblock').html(res.title);
+        $('#sidenav').html(res.sidebar);
+        $('#songlist').html(res.songlist);
+        // slideout.toggle();
+        if( $('.main').css('padding-right')!='40px') {
+          slideout.toggle();
+        }
+        // songinfo change
+        SongInfo_new = JSON.parse(res.urllist);
+      }
+    });
+  });
+
+  // search songs ajax post
+  $('#searchForm').submit(function(e) {
+    $.ajax({
+      type: 'POST',
+      url: '{% url 'musicbox:search' %}',
+      data: $('#searchForm').serialize(), // serializes the form's elements.
+      success: function(response){
+        res = JSON.parse(response);
+        if(res.error=='no'){
+          $('#searchSonglist').html(res.search_results);
+          $('#songModal').modal('show');
+          // $('#searchSonglist').on('click', '.clickable-row', function(event) {
+          //   var fCheck = $(this).find('input[type="checkbox"]');
+          //   fCheck.prop('checked', !fCheck.prop('checked'));
+          //   $(this).toggleClass('selected-song');
+          // });
+        }else {
+          alert('Cannot find search results!');
+        }
+      }
+    });
+    e.preventDefault(); // avoid to execute the actual submit of the form.
+  });
+
+  $('#searchSonglist').on('click', '.clickable-row', function(event) {
+    var fCheck = $(this).find('input[type="checkbox"]');
+    fCheck.prop('checked', !fCheck.prop('checked'));
+    $(this).toggleClass('selected-song');
+  });
+
+  $('#addsongForm').submit(function(e) {
+    $.ajax({
+      type: 'POST',
+      url: '{% url 'musicbox:addsongs' %}',
+      data: $('#addsongForm').serialize(), // serializes the form's elements.
+      success: function(response){
+        res = JSON.parse(response);
+        $('#songModal').modal('hide');
+        $('#songlist').html(res.songlist);
+        // songinfo change
+        SongInfo_new = JSON.parse(res.urllist);
+      }
+    });
+    e.preventDefault(); // avoid to execute the actual submit of the form.
+  });
+
+  $('#songModal').on('hidden.bs.modal', function (e) {
+    $('#searchForm').find('input[name="searchStr"]').val('');
+    $('#searchSonglist').html('');
+  });
+
+
+
+  </script>
+
+  {% endblock %}

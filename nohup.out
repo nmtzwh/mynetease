@@ -1,0 +1,804 @@
+[10/May/2016 22:54:26] "GET /musicbox HTTP/1.1" 301 0
+[10/May/2016 22:54:26] "GET /musicbox/ HTTP/1.1" 200 18669
+[10/May/2016 22:54:26] "GET /static/css/base.css HTTP/1.1" 200 3858
+[10/May/2016 22:54:26] "GET /static/css/bootstrap.css HTTP/1.1" 200 115805
+[10/May/2016 22:54:27] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 28931
+[10/May/2016 22:54:27] "GET /static/js/slideout.min.js HTTP/1.1" 200 6865
+[10/May/2016 22:54:27] "GET /static/js/tether.min.js HTTP/1.1" 200 23144
+[10/May/2016 22:54:27] "GET /static/js/bootstrap.js HTTP/1.1" 200 99695
+[10/May/2016 22:54:27] "GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2 HTTP/1.1" 200 71760
+Not Found: /favicon.ico
+[10/May/2016 22:54:29] "GET /favicon.ico HTTP/1.1" 404 2045
+Not Found: /favicon.ico
+[10/May/2016 22:54:29] "GET /favicon.ico HTTP/1.1" 404 2045
+[10/May/2016 22:54:32] "GET /musicbox/play/?song_id=656 HTTP/1.1" 200 18669
+[10/May/2016 23:03:36] "GET /musicbox/stop/?song_id=656 HTTP/1.1" 200 18669
+[11/May/2016 01:59:33] "GET /musicbox/ HTTP/1.1" 200 18669
+[11/May/2016 01:59:34] "GET /static/css/base.css HTTP/1.1" 200 3858
+[11/May/2016 01:59:34] "GET /static/css/bootstrap.css HTTP/1.1" 200 115805
+[11/May/2016 01:59:34] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 28931
+[11/May/2016 01:59:34] "GET /static/js/tether.min.js HTTP/1.1" 200 23144
+[11/May/2016 01:59:34] "GET /static/js/bootstrap.js HTTP/1.1" 200 99695
+[11/May/2016 01:59:34] "GET /static/js/slideout.min.js HTTP/1.1" 200 6865
+[11/May/2016 01:59:35] "GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2 HTTP/1.1" 200 71760
+Not Found: /favicon.ico
+[11/May/2016 01:59:36] "GET /favicon.ico HTTP/1.1" 404 2045
+[11/May/2016 08:08:26] "GET /musicbox HTTP/1.1" 301 0
+[11/May/2016 08:08:26] "GET /musicbox/ HTTP/1.1" 200 18669
+[11/May/2016 08:08:26] "GET /static/js/tether.min.js HTTP/1.1" 304 0
+[11/May/2016 08:08:26] "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+[11/May/2016 08:08:26] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 0
+[11/May/2016 08:08:26] "GET /static/css/base.css HTTP/1.1" 304 0
+[11/May/2016 08:08:26] "GET /static/js/bootstrap.js HTTP/1.1" 304 0
+[11/May/2016 08:08:26] "GET /static/js/slideout.min.js HTTP/1.1" 304 0
+[11/May/2016 08:08:26] "GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2 HTTP/1.1" 304 0
+[11/May/2016 08:08:32] "GET /musicbox/play/?song_id=655 HTTP/1.1" 200 18669
+[11/May/2016 08:28:01] "GET /musicbox/stop/?song_id=655 HTTP/1.1" 200 18669
+[11/May/2016 12:13:03] "GET /musicbox/play/?song_id=656 HTTP/1.1" 200 18669
+[11/May/2016 12:18:34] "GET /musicbox/play/?song_id=655 HTTP/1.1" 200 18669
+[11/May/2016 12:24:40] "GET /musicbox/play/?song_id=661 HTTP/1.1" 200 18669
+/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py:67: UserWarning: A {% csrf_token %} was used in a template, but the context did not provide the value.  This is usually caused by not using RequestContext.
+  "A {% csrf_token %} was used in a template, but the context "
+
+[11/May/2016 12:28:23] "POST /musicbox/search/ HTTP/1.1" 200 53609
+[11/May/2016 12:29:02] "POST /musicbox/addsongs/ HTTP/1.1" 200 6565
+[11/May/2016 12:29:08] "GET /musicbox/play/?song_id=672 HTTP/1.1" 200 19333
+[11/May/2016 12:30:57] "POST /musicbox/search/ HTTP/1.1" 200 53883
+[11/May/2016 12:37:00] "GET /musicbox/stop/?song_id=672 HTTP/1.1" 200 19333
+[12/May/2016 13:04:57] "GET /musicbox/ HTTP/1.1" 200 19333
+[12/May/2016 13:04:57] "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+[12/May/2016 13:04:57] "GET /static/css/base.css HTTP/1.1" 304 0
+[12/May/2016 13:04:57] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 0
+[12/May/2016 13:04:57] "GET /static/js/tether.min.js HTTP/1.1" 304 0
+[12/May/2016 13:04:57] "GET /static/js/bootstrap.js HTTP/1.1" 304 0
+[12/May/2016 13:04:57] "GET /static/js/slideout.min.js HTTP/1.1" 304 0
+[12/May/2016 13:04:57] "GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2 HTTP/1.1" 304 0
+[12/May/2016 13:05:02] "GET /musicbox/deleteSong/?song_id=0 HTTP/1.1" 200 31
+[12/May/2016 13:05:09] "GET /musicbox/deleteSong/?song_id=672 HTTP/1.1" 200 34
+[12/May/2016 13:05:11] "GET /musicbox/deleteSong/?song_id=671 HTTP/1.1" 200 34
+[12/May/2016 13:05:25] "GET /musicbox/play/?song_id=657 HTTP/1.1" 200 18669
+[12/May/2016 13:33:02] "GET /musicbox/stop/?song_id=0 HTTP/1.1" 200 18669
+Not Found: /favicon.ico
+[13/May/2016 00:47:49] "GET /favicon.ico HTTP/1.1" 404 2045
+[13/May/2016 23:25:21] "GET /musicbox HTTP/1.1" 301 0
+[13/May/2016 23:25:21] "GET /musicbox/ HTTP/1.1" 200 18669
+[13/May/2016 23:25:21] "GET /static/css/bootstrap.css HTTP/1.1" 200 115805
+[13/May/2016 23:25:21] "GET /static/css/base.css HTTP/1.1" 200 3858
+[13/May/2016 23:25:21] "GET /static/js/tether.min.js HTTP/1.1" 200 23144
+[13/May/2016 23:25:21] "GET /static/js/slideout.min.js HTTP/1.1" 200 6865
+[13/May/2016 23:25:21] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 28931
+[13/May/2016 23:25:21] "GET /static/js/bootstrap.js HTTP/1.1" 200 99695
+[13/May/2016 23:25:21] "GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2 HTTP/1.1" 200 71760
+Not Found: /favicon.ico
+[13/May/2016 23:25:22] "GET /favicon.ico HTTP/1.1" 404 2045
+[13/May/2016 23:25:25] "GET /musicbox/playlist/?pid=19 HTTP/1.1" 200 4826
+[13/May/2016 23:25:28] "GET /musicbox/playlist/?pid=15 HTTP/1.1" 200 139566
+[13/May/2016 23:25:30] "GET /musicbox/playlist/?pid=10 HTTP/1.1" 200 6442
+[13/May/2016 23:25:31] "GET /musicbox/play/?song_id=0 HTTP/1.1" 200 16899
+[13/May/2016 23:34:33] "GET /musicbox/playlist/?pid=20 HTTP/1.1" 200 8555
+[13/May/2016 23:34:36] "GET /musicbox/play/?song_id=656 HTTP/1.1" 200 18669
+[13/May/2016 23:41:03] "GET /musicbox/stop/?song_id=656 HTTP/1.1" 200 18669
+[17/May/2016 12:17:20] "GET /musicbox HTTP/1.1" 301 0
+[17/May/2016 12:17:20] "GET /musicbox/ HTTP/1.1" 200 18669
+[17/May/2016 12:17:20] "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+[17/May/2016 12:17:20] "GET /static/css/base.css HTTP/1.1" 304 0
+[17/May/2016 12:17:20] "GET /static/js/tether.min.js HTTP/1.1" 304 0
+[17/May/2016 12:17:20] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 28931
+[17/May/2016 12:17:20] "GET /static/js/slideout.min.js HTTP/1.1" 304 0
+[17/May/2016 12:17:20] "GET /static/js/bootstrap.js HTTP/1.1" 304 0
+[17/May/2016 12:17:20] "GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2 HTTP/1.1" 200 71760
+Not Found: /favicon.ico
+[17/May/2016 12:17:20] "GET /favicon.ico HTTP/1.1" 404 2045
+[17/May/2016 12:17:22] "GET /musicbox/playlist/?pid=19 HTTP/1.1" 200 4826
+[17/May/2016 12:17:23] "GET /musicbox/playlist/?pid=17 HTTP/1.1" 200 10763
+[17/May/2016 12:17:25] "GET /musicbox/playlist/?pid=15 HTTP/1.1" 200 139566
+[17/May/2016 12:17:26] "GET /musicbox/playlist/?pid=14 HTTP/1.1" 200 19826
+[17/May/2016 12:17:28] "GET /musicbox/playlist/?pid=13 HTTP/1.1" 200 45010
+[17/May/2016 12:17:29] "GET /musicbox/playlist/?pid=10 HTTP/1.1" 200 6442
+[17/May/2016 12:17:30] "GET /musicbox/playlist/?pid=9 HTTP/1.1" 200 9014
+[17/May/2016 12:17:31] "GET /musicbox/playlist/?pid=8 HTTP/1.1" 200 9022
+[17/May/2016 12:17:31] "GET /musicbox/playlist/?pid=7 HTTP/1.1" 200 4428
+[17/May/2016 12:17:32] "GET /musicbox/playlist/?pid=6 HTTP/1.1" 200 5827
+[17/May/2016 12:17:33] "GET /musicbox/playlist/?pid=3 HTTP/1.1" 200 6926
+[17/May/2016 12:17:33] "GET /musicbox/playlist/?pid=2 HTTP/1.1" 200 7469
+[17/May/2016 12:17:34] "GET /musicbox/playlist/?pid=1 HTTP/1.1" 200 5017
+[17/May/2016 12:17:40] "POST /musicbox/search/ HTTP/1.1" 200 5287
+[17/May/2016 12:17:44] "POST /musicbox/addsongs/ HTTP/1.1" 200 3181
+[17/May/2016 12:17:46] "GET /musicbox/play/?song_id=673 HTTP/1.1" 200 15973
+[17/May/2016 12:19:59] "GET /musicbox/stop/?song_id=673 HTTP/1.1" 200 15973
+[17/May/2016 12:21:04] "GET /musicbox/play/?song_id=673 HTTP/1.1" 200 15973
+[17/May/2016 12:21:11] "GET /musicbox/play/?song_id=673 HTTP/1.1" 200 15973
+[17/May/2016 12:21:17] "GET /musicbox/playlist/?pid=2 HTTP/1.1" 200 7469
+[17/May/2016 12:21:18] "GET /musicbox/playlist/?pid=1 HTTP/1.1" 200 5405
+[17/May/2016 12:21:21] "GET /musicbox/play/?song_id=673 HTTP/1.1" 200 15973
+[17/May/2016 12:32:37] "GET /musicbox/play/?song_id=673 HTTP/1.1" 200 15973
+[17/May/2016 12:39:13] "GET /musicbox/stop/?song_id=673 HTTP/1.1" 200 15973
+Not Found: /nusicbox/
+[18/May/2016 22:16:04] "GET /nusicbox/ HTTP/1.1" 404 2039
+Not Found: /favicon.ico
+[18/May/2016 22:16:04] "GET /favicon.ico HTTP/1.1" 404 2045
+[18/May/2016 22:16:31] "GET /musicbox/ HTTP/1.1" 200 18669
+[18/May/2016 22:16:31] "GET /static/css/base.css HTTP/1.1" 304 0
+[18/May/2016 22:16:31] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 0
+[18/May/2016 22:16:31] "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+[18/May/2016 22:16:31] "GET /static/js/tether.min.js HTTP/1.1" 304 0
+[18/May/2016 22:16:31] "GET /static/js/bootstrap.js HTTP/1.1" 304 0
+[18/May/2016 22:16:31] "GET /static/js/slideout.min.js HTTP/1.1" 304 0
+[18/May/2016 22:16:31] "GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2 HTTP/1.1" 304 0
+[18/May/2016 22:16:33] "GET /musicbox/playlist/?pid=19 HTTP/1.1" 200 4826
+[18/May/2016 22:16:34] "GET /musicbox/playlist/?pid=15 HTTP/1.1" 200 139566
+[18/May/2016 22:16:35] "GET /musicbox/playlist/?pid=9 HTTP/1.1" 200 9014
+[18/May/2016 22:16:36] "GET /musicbox/playlist/?pid=6 HTTP/1.1" 200 5827
+[18/May/2016 22:16:37] "GET /musicbox/playlist/?pid=2 HTTP/1.1" 200 7469
+[18/May/2016 22:16:37] "GET /musicbox/playlist/?pid=10 HTTP/1.1" 200 6442
+[18/May/2016 22:16:38] "GET /musicbox/playlist/?pid=7 HTTP/1.1" 200 4428
+[18/May/2016 22:16:39] "GET /musicbox/playlist/?pid=15 HTTP/1.1" 200 139566
+[18/May/2016 22:16:39] "GET /musicbox/playlist/?pid=9 HTTP/1.1" 200 9014
+[18/May/2016 22:16:41] "GET /musicbox/playlist/?pid=15 HTTP/1.1" 200 139566
+[18/May/2016 22:16:41] "GET /musicbox/playlist/?pid=17 HTTP/1.1" 200 10763
+[18/May/2016 22:16:43] "GET /musicbox/playlist/?pid=15 HTTP/1.1" 200 139566
+[18/May/2016 22:16:56] "GET /musicbox/playlist/?pid=10 HTTP/1.1" 200 6442
+[18/May/2016 22:16:57] "GET /musicbox/playlist/?pid=8 HTTP/1.1" 200 9022
+[18/May/2016 22:16:58] "GET /musicbox/playlist/?pid=6 HTTP/1.1" 200 5827
+[18/May/2016 22:16:58] "GET /musicbox/playlist/?pid=3 HTTP/1.1" 200 6926
+[18/May/2016 22:16:59] "GET /musicbox/playlist/?pid=2 HTTP/1.1" 200 7469
+[18/May/2016 22:16:59] "GET /musicbox/playlist/?pid=7 HTTP/1.1" 200 4428
+[18/May/2016 22:17:00] "GET /musicbox/playlist/?pid=3 HTTP/1.1" 200 6926
+[18/May/2016 22:17:01] "GET /musicbox/playlist/?pid=9 HTTP/1.1" 200 9014
+[18/May/2016 22:17:01] "GET /musicbox/playlist/?pid=7 HTTP/1.1" 200 4428
+[18/May/2016 22:17:03] "GET /musicbox/playlist/?pid=13 HTTP/1.1" 200 45010
+Not Found: /favicon.ico
+[18/May/2016 22:44:54] "GET /favicon.ico HTTP/1.1" 404 2045
+[19/May/2016 12:25:48] "GET /musicbox/ HTTP/1.1" 200 18669
+[19/May/2016 12:25:49] "GET /static/css/base.css HTTP/1.1" 200 3858
+[19/May/2016 12:25:49] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 28931
+[19/May/2016 12:25:49] "GET /static/css/bootstrap.css HTTP/1.1" 200 115805
+[19/May/2016 12:25:49] "GET /static/js/tether.min.js HTTP/1.1" 200 23144
+[19/May/2016 12:25:49] "GET /static/js/slideout.min.js HTTP/1.1" 200 6865
+[19/May/2016 12:25:49] "GET /static/js/bootstrap.js HTTP/1.1" 200 99695
+[19/May/2016 12:25:49] "GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2 HTTP/1.1" 200 71760
+Not Found: /favicon.ico
+[19/May/2016 12:25:51] "GET /favicon.ico HTTP/1.1" 404 2045
+[19/May/2016 12:25:53] "GET /musicbox/play/?song_id=0 HTTP/1.1" 200 18669
+[19/May/2016 12:26:14] "GET /musicbox/play/?song_id=669 HTTP/1.1" 200 18669
+[19/May/2016 12:28:12] "GET /musicbox/stop/?song_id=669 HTTP/1.1" 200 18669
+[19/May/2016 21:34:24] "GET /musicbox HTTP/1.1" 301 0
+[19/May/2016 21:34:24] "GET /musicbox/ HTTP/1.1" 200 18669
+[19/May/2016 21:34:25] "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+[19/May/2016 21:34:25] "GET /static/css/base.css HTTP/1.1" 304 0
+[19/May/2016 21:34:25] "GET /static/js/tether.min.js HTTP/1.1" 304 0
+[19/May/2016 21:34:25] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 28931
+[19/May/2016 21:34:25] "GET /static/js/bootstrap.js HTTP/1.1" 304 0
+[19/May/2016 21:34:25] "GET /static/js/slideout.min.js HTTP/1.1" 304 0
+[19/May/2016 21:34:25] "GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2 HTTP/1.1" 200 71760
+Not Found: /favicon.ico
+[19/May/2016 21:34:25] "GET /favicon.ico HTTP/1.1" 404 2045
+[19/May/2016 21:34:28] "GET /musicbox/play/?song_id=0 HTTP/1.1" 200 18669
+[19/May/2016 21:34:32] "GET /musicbox/play/?song_id=656 HTTP/1.1" 200 18669
+[19/May/2016 21:43:21] "GET /musicbox/stop/?song_id=656 HTTP/1.1" 200 18669
+[19/May/2016 21:43:38] "GET /musicbox/play/?song_id=664 HTTP/1.1" 200 18669
+[19/May/2016 21:50:09] "GET /musicbox/stop/?song_id=664 HTTP/1.1" 200 18669
+Not Found: /favicon.ico
+[20/May/2016 08:01:36] "GET /favicon.ico HTTP/1.1" 404 2045
+[20/May/2016 08:01:41] "GET /musicbox/play/?song_id=655 HTTP/1.1" 200 18669
+[20/May/2016 08:05:13] "GET /musicbox/stop/?song_id=655 HTTP/1.1" 200 18669
+[20/May/2016 18:28:04] "GET /musicbox/ HTTP/1.1" 200 18669
+Not Found: /favicon.ico
+[20/May/2016 18:28:05] "GET /favicon.ico HTTP/1.1" 404 2045
+[20/May/2016 18:28:15] "POST /musicbox/search/ HTTP/1.1" 200 7408
+[20/May/2016 18:28:23] "POST /musicbox/addsongs/ HTTP/1.1" 200 6230
+[20/May/2016 18:28:26] "GET /musicbox/play/?song_id=674 HTTP/1.1" 200 18998
+[20/May/2016 18:32:58] "GET /musicbox/playlist/?pid=6 HTTP/1.1" 200 5827
+[20/May/2016 18:33:02] "POST /musicbox/search/ HTTP/1.1" 200 47007
+[20/May/2016 18:33:10] "GET /musicbox/playlist/?pid=7 HTTP/1.1" 200 4428
+[20/May/2016 18:33:11] "GET /musicbox/playlist/?pid=6 HTTP/1.1" 200 5827
+[20/May/2016 18:33:15] "POST /musicbox/search/ HTTP/1.1" 200 47007
+[20/May/2016 18:33:37] "POST /musicbox/addsongs/ HTTP/1.1" 200 9483
+[20/May/2016 18:33:40] "GET /musicbox/play/?song_id=685 HTTP/1.1" 200 22262
+[20/May/2016 18:34:50] "GET /musicbox/play/?song_id=690 HTTP/1.1" 200 22262
+[20/May/2016 18:34:52] "GET /musicbox/play/?song_id=689 HTTP/1.1" 200 22262
+[20/May/2016 18:44:54] "GET /musicbox/stop/?song_id=690 HTTP/1.1" 200 22262
+[20/May/2016 22:09:30] "GET /musicbox/ HTTP/1.1" 200 18998
+Not Found: /favicon.ico
+[20/May/2016 22:09:31] "GET /favicon.ico HTTP/1.1" 404 2045
+[20/May/2016 22:10:23] "GET /musicbox/play/?song_id=674 HTTP/1.1" 200 18998
+[20/May/2016 22:21:47] "GET /musicbox/play/?song_id=674 HTTP/1.1" 200 18998
+[20/May/2016 22:27:08] "GET /musicbox/play/?song_id=674 HTTP/1.1" 200 18998
+[20/May/2016 22:36:17] "GET /musicbox/stop/?song_id=674 HTTP/1.1" 200 18998
+[21/May/2016 21:44:26] "GET /musicbox/ HTTP/1.1" 200 18998
+[21/May/2016 21:44:26] "GET /static/css/base.css HTTP/1.1" 304 0
+[21/May/2016 21:44:26] "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+[21/May/2016 21:44:26] "GET /static/js/tether.min.js HTTP/1.1" 304 0
+[21/May/2016 21:44:26] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 0
+[21/May/2016 21:44:26] "GET /static/js/slideout.min.js HTTP/1.1" 304 0
+[21/May/2016 21:44:26] "GET /static/js/bootstrap.js HTTP/1.1" 304 0
+[21/May/2016 21:44:27] "GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2 HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[21/May/2016 21:44:27] "GET /favicon.ico HTTP/1.1" 404 2045
+[21/May/2016 21:45:36] "GET /musicbox/ HTTP/1.1" 200 18998
+[21/May/2016 21:45:38] "GET /musicbox/playlist/?pid=17 HTTP/1.1" 200 10763
+[21/May/2016 21:45:39] "GET /musicbox/playlist/?pid=20 HTTP/1.1" 200 8904
+[21/May/2016 21:45:44] "POST /musicbox/search/ HTTP/1.1" 200 7663
+[21/May/2016 21:45:48] "POST /musicbox/addsongs/ HTTP/1.1" 200 6945
+[21/May/2016 21:45:49] "GET /musicbox/play/?song_id=0 HTTP/1.1" 200 19713
+[21/May/2016 21:57:01] "GET /musicbox/stop/?song_id=0 HTTP/1.1" 200 19713
+[21/May/2016 22:01:55] "GET /musicbox/play/?song_id=0 HTTP/1.1" 200 19713
+[21/May/2016 22:10:10] "GET /musicbox/stop/?song_id=0 HTTP/1.1" 200 19713
+[21/May/2016 22:23:54] "GET /musicbox/play/?song_id=664 HTTP/1.1" 200 19713
+[21/May/2016 22:43:04] "GET /musicbox HTTP/1.1" 301 0
+[21/May/2016 22:43:05] "GET /musicbox/ HTTP/1.1" 200 19713
+[21/May/2016 22:43:05] "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+[21/May/2016 22:43:05] "GET /static/css/base.css HTTP/1.1" 304 0
+[21/May/2016 22:43:05] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 0
+[21/May/2016 22:43:05] "GET /static/js/tether.min.js HTTP/1.1" 304 0
+[21/May/2016 22:43:05] "GET /static/js/bootstrap.js HTTP/1.1" 304 0
+[21/May/2016 22:43:05] "GET /static/js/slideout.min.js HTTP/1.1" 304 0
+[21/May/2016 22:43:06] "GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2 HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[21/May/2016 22:43:06] "GET /favicon.ico HTTP/1.1" 404 2045
+[21/May/2016 22:43:35] "GET /musicbox/stop/?song_id=664 HTTP/1.1" 200 19713
+[21/May/2016 22:44:10] "GET /musicbox/playlist/?pid=1 HTTP/1.1" 200 5405
+[21/May/2016 22:44:12] "POST /musicbox/search/ HTTP/1.1" 200 28687
+[21/May/2016 22:47:55] "POST /musicbox/search/ HTTP/1.1" 200 52538
+[21/May/2016 22:48:25] "POST /musicbox/addsongs/ HTTP/1.1" 200 3839
+[21/May/2016 22:48:27] "GET /musicbox/play/?song_id=664 HTTP/1.1" 200 15593
+[21/May/2016 22:49:58] "GET /musicbox/play/?song_id=695 HTTP/1.1" 200 16631
+[21/May/2016 22:50:03] "GET /musicbox/play/?song_id=694 HTTP/1.1" 200 16631
+[21/May/2016 22:50:21] "GET /musicbox/stop/?song_id=694 HTTP/1.1" 200 16631
+Not Found: /favicon.ico
+[22/May/2016 07:08:03] "GET /favicon.ico HTTP/1.1" 404 2045
+[22/May/2016 18:37:14] "GET /musicbox/ HTTP/1.1" 200 19713
+[22/May/2016 18:37:15] "GET /static/css/base.css HTTP/1.1" 304 0
+[22/May/2016 18:37:15] "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+[22/May/2016 18:37:15] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 0
+[22/May/2016 18:37:15] "GET /static/js/slideout.min.js HTTP/1.1" 304 0
+[22/May/2016 18:37:15] "GET /static/js/tether.min.js HTTP/1.1" 304 0
+[22/May/2016 18:37:15] "GET /static/js/bootstrap.js HTTP/1.1" 304 0
+[22/May/2016 18:37:15] "GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2 HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[22/May/2016 18:37:15] "GET /favicon.ico HTTP/1.1" 404 2045
+[22/May/2016 18:37:17] "GET /musicbox/play/?song_id=0 HTTP/1.1" 200 19713
+[22/May/2016 18:37:22] "GET /musicbox/play/?song_id=0 HTTP/1.1" 200 19713
+[22/May/2016 18:47:19] "GET /musicbox/ HTTP/1.1" 200 19713
+Not Found: /favicon.ico
+[22/May/2016 18:47:22] "GET /favicon.ico HTTP/1.1" 404 2045
+[22/May/2016 18:47:30] "GET /musicbox/playlist/?pid=10 HTTP/1.1" 200 6442
+[22/May/2016 18:47:33] "GET /musicbox/playlist/?pid=15 HTTP/1.1" 200 139566
+[22/May/2016 18:47:37] "GET /musicbox/playlist/?pid=19 HTTP/1.1" 200 4826
+[22/May/2016 18:48:04] "GET /musicbox/playlist/?pid=10 HTTP/1.1" 200 6442
+[22/May/2016 18:48:06] "GET /musicbox/play/?song_id=601 HTTP/1.1" 200 15861
+[22/May/2016 18:48:11] "GET /musicbox/stop/?song_id=601 HTTP/1.1" 200 16899
+[22/May/2016 18:48:12] "GET /musicbox/play/?song_id=601 HTTP/1.1" 200 15861
+[22/May/2016 18:48:15] "GET /musicbox/play/?song_id=601 HTTP/1.1" 200 15861
+[22/May/2016 18:48:19] "GET /musicbox/play/?song_id=98 HTTP/1.1" 200 16899
+[22/May/2016 18:54:49] "GET /musicbox/playlist/?pid=13 HTTP/1.1" 200 45010
+[22/May/2016 18:54:51] "GET /musicbox/playlist/?pid=15 HTTP/1.1" 200 139566
+[22/May/2016 18:54:52] "GET /musicbox/playlist/?pid=19 HTTP/1.1" 200 4826
+[22/May/2016 18:54:53] "GET /musicbox/playlist/?pid=10 HTTP/1.1" 200 6442
+Internal Server Error: /musicbox/searchPlaylist/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/tom/python_env/mynetease/musicbox/views.py", line 226, in searchPlaylist
+    listinfo = getListInfo(request.GET['searchStrList'])  # add search type in the future!!!
+  File "/root/tom/python_env/mynetease/musicbox/views.py", line 215, in getListInfo
+    return netease.dig_info(data['result']['playlists'], 'top_playlists')
+KeyError: 'playlists'
+[22/May/2016 18:59:42] "GET /musicbox/searchPlaylist/?searchStrList=%E6%96%90%E5%A6%96 HTTP/1.1" 500 13308
+Internal Server Error: /musicbox/searchPlaylist/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/tom/python_env/mynetease/musicbox/views.py", line 226, in searchPlaylist
+    listinfo = getListInfo(request.GET['searchStrList'])  # add search type in the future!!!
+  File "/root/tom/python_env/mynetease/musicbox/views.py", line 215, in getListInfo
+    return netease.dig_info(data['result']['playlists'], 'top_playlists')
+KeyError: 'playlists'
+[22/May/2016 18:59:51] "GET /musicbox/searchPlaylist/?searchStrList=%E6%96%90%E5%A6%96 HTTP/1.1" 500 13308
+Internal Server Error: /musicbox/searchPlaylist/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/tom/python_env/mynetease/musicbox/views.py", line 226, in searchPlaylist
+    listinfo = getListInfo(request.GET['searchStrList'])  # add search type in the future!!!
+  File "/root/tom/python_env/mynetease/musicbox/views.py", line 215, in getListInfo
+    return netease.dig_info(data['result']['playlists'], 'top_playlists')
+KeyError: 'playlists'
+[22/May/2016 18:59:53] "GET /musicbox/searchPlaylist/?searchStrList=%E6%96%90%E5%A6%96 HTTP/1.1" 500 13308
+Internal Server Error: /musicbox/searchPlaylist/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/tom/python_env/mynetease/musicbox/views.py", line 226, in searchPlaylist
+    listinfo = getListInfo(request.GET['searchStrList'])  # add search type in the future!!!
+  File "/root/tom/python_env/mynetease/musicbox/views.py", line 215, in getListInfo
+    return netease.dig_info(data['result']['playlists'], 'top_playlists')
+KeyError: 'playlists'
+[22/May/2016 18:59:53] "GET /musicbox/searchPlaylist/?searchStrList=%E6%96%90%E5%A6%96 HTTP/1.1" 500 13308
+[22/May/2016 18:59:58] "GET /musicbox/searchPlaylist/?searchStrList=%E7%A8%8B%E7%92%A7 HTTP/1.1" 200 11555
+Internal Server Error: /musicbox/searchPlaylist/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/tom/python_env/mynetease/musicbox/views.py", line 226, in searchPlaylist
+    listinfo = getListInfo(request.GET['searchStrList'])  # add search type in the future!!!
+  File "/root/tom/python_env/mynetease/musicbox/views.py", line 215, in getListInfo
+    return netease.dig_info(data['result']['playlists'], 'top_playlists')
+KeyError: 'playlists'
+[22/May/2016 19:00:20] "GET /musicbox/searchPlaylist/?searchStrList=%E6%96%90%E5%A6%96 HTTP/1.1" 500 13308
+[22/May/2016 19:00:26] "GET /musicbox/searchPlaylist/?searchStrList=nmtzwh HTTP/1.1" 200 533
+[22/May/2016 19:00:36] "GET /musicbox/searchPlaylist/?searchStrList=kingzhao HTTP/1.1" 200 717
+[22/May/2016 19:01:19] "GET /musicbox/playlist/?pid=15 HTTP/1.1" 200 139566
+[22/May/2016 19:01:20] "GET /musicbox/playlist/?pid=9 HTTP/1.1" 200 9014
+[22/May/2016 19:01:20] "GET /musicbox/playlist/?pid=7 HTTP/1.1" 200 4428
+[22/May/2016 19:01:21] "GET /musicbox/playlist/?pid=14 HTTP/1.1" 200 19826
+[22/May/2016 19:01:24] "GET /musicbox/playlist/?pid=9 HTTP/1.1" 200 9014
+[22/May/2016 19:01:30] "GET /musicbox/playlist/?pid=20 HTTP/1.1" 200 9695
+[22/May/2016 19:01:36] "POST /musicbox/search/ HTTP/1.1" 200 32582
+[22/May/2016 19:01:42] "POST /musicbox/addsongs/ HTTP/1.1" 200 7708
+[22/May/2016 19:01:51] "GET /musicbox/deleteSong/?song_id=696 HTTP/1.1" 200 34
+[22/May/2016 19:01:53] "GET /musicbox/deleteSong/?song_id=697 HTTP/1.1" 200 34
+[22/May/2016 19:02:50] "GET /musicbox/playlist/?pid=13 HTTP/1.1" 200 45010
+[22/May/2016 19:02:52] "GET /musicbox/playlist/?pid=9 HTTP/1.1" 200 9014
+[22/May/2016 19:02:52] "GET /musicbox/playlist/?pid=3 HTTP/1.1" 200 6926
+[22/May/2016 19:02:53] "GET /musicbox/playlist/?pid=9 HTTP/1.1" 200 9014
+[22/May/2016 19:02:54] "GET /musicbox/playlist/?pid=15 HTTP/1.1" 200 139566
+[22/May/2016 19:02:54] "GET /musicbox/playlist/?pid=10 HTTP/1.1" 200 6442
+[22/May/2016 19:02:55] "GET /musicbox/playlist/?pid=19 HTTP/1.1" 200 4826
+[22/May/2016 19:02:56] "GET /musicbox/playlist/?pid=13 HTTP/1.1" 200 45010
+[22/May/2016 19:02:57] "GET /musicbox/playlist/?pid=20 HTTP/1.1" 200 9695
+[22/May/2016 19:02:58] "GET /musicbox/stop/?song_id=670 HTTP/1.1" 200 19713
+[22/May/2016 19:03:00] "GET /musicbox/playlist/?pid=9 HTTP/1.1" 200 9014
+[22/May/2016 19:03:01] "GET /musicbox/playlist/?pid=20 HTTP/1.1" 200 9695
+[22/May/2016 19:03:02] "GET /musicbox/playlist/?pid=14 HTTP/1.1" 200 19826
+[22/May/2016 19:03:02] "GET /musicbox/playlist/?pid=8 HTTP/1.1" 200 9022
+[22/May/2016 19:03:03] "GET /musicbox/playlist/?pid=20 HTTP/1.1" 200 9695
+[22/May/2016 19:03:08] "GET /musicbox/play/?song_id=670 HTTP/1.1" 200 19713
+[22/May/2016 19:03:16] "GET /musicbox/play/?song_id=693 HTTP/1.1" 200 19713
+[22/May/2016 19:04:40] "GET /musicbox/stop/?song_id=693 HTTP/1.1" 200 19713
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 25, 2016 - 22:35:11
+Django version 1.9.6, using settings 'mynetease.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+[25/May/2016 22:36:19] "GET /musicbox HTTP/1.1" 301 0
+[25/May/2016 22:36:19] "GET /musicbox/ HTTP/1.1" 200 19713
+[25/May/2016 22:36:19] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 28931
+[25/May/2016 22:36:19] "GET /static/css/base.css HTTP/1.1" 200 3858
+[25/May/2016 22:36:19] "GET /static/js/bootstrap.js HTTP/1.1" 200 99695
+[25/May/2016 22:36:19] "GET /static/js/slideout.min.js HTTP/1.1" 200 6865
+[25/May/2016 22:36:19] "GET /static/css/bootstrap.css HTTP/1.1" 200 115805
+[25/May/2016 22:36:19] "GET /static/js/tether.min.js HTTP/1.1" 200 23144
+[25/May/2016 22:36:20] "GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2 HTTP/1.1" 200 71760
+Not Found: /favicon.ico
+[25/May/2016 22:36:20] "GET /favicon.ico HTTP/1.1" 404 2045
+[25/May/2016 22:36:32] "GET /musicbox/playlist/?pid=9 HTTP/1.1" 200 9014
+[25/May/2016 22:36:39] "GET /musicbox/play/?song_id=0 HTTP/1.1" 200 19169
+[25/May/2016 22:55:41] "GET /musicbox/stop/?song_id=0 HTTP/1.1" 200 19169
+[27/May/2016 07:49:57] "GET /musicbox HTTP/1.1" 301 0
+[27/May/2016 07:49:57] "GET /musicbox/ HTTP/1.1" 200 19713
+Not Found: /favicon.ico
+[27/May/2016 07:49:58] "GET /favicon.ico HTTP/1.1" 404 2045
+[27/May/2016 07:50:07] "GET /musicbox/play/?song_id=655 HTTP/1.1" 200 19713
+[27/May/2016 08:05:24] "GET /musicbox/stop/?song_id=655 HTTP/1.1" 200 19713
+[27/May/2016 20:28:02] "GET /musicbox/ HTTP/1.1" 200 19713
+[27/May/2016 20:28:02] "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+[27/May/2016 20:28:02] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 0
+[27/May/2016 20:28:02] "GET /static/css/base.css HTTP/1.1" 304 0
+[27/May/2016 20:28:02] "GET /static/js/tether.min.js HTTP/1.1" 304 0
+[27/May/2016 20:28:02] "GET /static/js/slideout.min.js HTTP/1.1" 304 0
+[27/May/2016 20:28:02] "GET /static/js/bootstrap.js HTTP/1.1" 304 0
+[27/May/2016 20:28:02] "GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2 HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[27/May/2016 20:28:03] "GET /favicon.ico HTTP/1.1" 404 2045
+[27/May/2016 20:28:04] "GET /musicbox/play/?song_id=0 HTTP/1.1" 200 19713
+[27/May/2016 20:30:42] "GET /musicbox/stop/?song_id=0 HTTP/1.1" 200 19713
+[28/May/2016 08:24:51] "GET /musicbox/playlist/?pid=3 HTTP/1.1" 200 6926
+[28/May/2016 08:24:52] "GET /musicbox/play/?song_id=0 HTTP/1.1" 200 17306
+[28/May/2016 08:26:48] "GET /musicbox/stop/?song_id=0 HTTP/1.1" 200 17306
+[15/Jun/2016 18:26:13] "GET /musicbox HTTP/1.1" 301 0
+[15/Jun/2016 18:26:13] "GET /musicbox/ HTTP/1.1" 200 19713
+[15/Jun/2016 18:26:13] "GET /static/css/base.css HTTP/1.1" 200 3858
+[15/Jun/2016 18:26:13] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 28931
+[15/Jun/2016 18:26:13] "GET /static/js/slideout.min.js HTTP/1.1" 200 6865
+[15/Jun/2016 18:26:13] "GET /static/js/tether.min.js HTTP/1.1" 200 23144
+[15/Jun/2016 18:26:13] "GET /static/css/bootstrap.css HTTP/1.1" 200 115805
+[15/Jun/2016 18:26:13] "GET /static/js/bootstrap.js HTTP/1.1" 200 99695
+[15/Jun/2016 18:26:13] "GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2 HTTP/1.1" 200 71760
+Not Found: /favicon.ico
+[15/Jun/2016 18:26:14] "GET /favicon.ico HTTP/1.1" 404 2045
+[15/Jun/2016 18:26:23] "GET /musicbox/playlist/?pid=3 HTTP/1.1" 200 6926
+[15/Jun/2016 18:26:25] "GET /musicbox/play/?song_id=0 HTTP/1.1" 200 17306
+[18/Jun/2016 21:42:52] "GET /musicbox HTTP/1.1" 301 0
+[18/Jun/2016 21:42:52] "GET /musicbox/ HTTP/1.1" 200 19713
+[18/Jun/2016 21:42:52] "GET /static/css/base.css HTTP/1.1" 200 3858
+[18/Jun/2016 21:42:52] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 28931
+[18/Jun/2016 21:42:52] "GET /static/js/tether.min.js HTTP/1.1" 200 23144
+[18/Jun/2016 21:42:52] "GET /static/js/slideout.min.js HTTP/1.1" 200 6865
+[18/Jun/2016 21:42:52] "GET /static/css/bootstrap.css HTTP/1.1" 200 115805
+[18/Jun/2016 21:42:52] "GET /static/js/bootstrap.js HTTP/1.1" 200 99695
+[18/Jun/2016 21:42:52] "GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2 HTTP/1.1" 200 71760
+Not Found: /favicon.ico
+[18/Jun/2016 21:42:53] "GET /favicon.ico HTTP/1.1" 404 2045
+/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py:67: UserWarning: A {% csrf_token %} was used in a template, but the context did not provide the value.  This is usually caused by not using RequestContext.
+  "A {% csrf_token %} was used in a template, but the context "
+
+[18/Jun/2016 21:43:01] "POST /musicbox/search/ HTTP/1.1" 200 51452
+[18/Jun/2016 21:43:08] "GET /musicbox/playlist/?pid=19 HTTP/1.1" 200 4826
+[18/Jun/2016 21:43:09] "GET /musicbox/playlist/?pid=20 HTTP/1.1" 200 9695
+[18/Jun/2016 21:43:29] "POST /musicbox/search/ HTTP/1.1" 200 5128
+[18/Jun/2016 21:43:41] "GET /musicbox/playlist/?pid=19 HTTP/1.1" 200 4826
+[18/Jun/2016 21:43:42] "GET /musicbox/playlist/?pid=20 HTTP/1.1" 200 9695
+[18/Jun/2016 21:43:43] "GET /musicbox/playlist/?pid=1 HTTP/1.1" 200 6154
+[18/Jun/2016 21:43:44] "GET /musicbox/playlist/?pid=1 HTTP/1.1" 200 6154
+[18/Jun/2016 21:43:50] "POST /musicbox/search/ HTTP/1.1" 200 5128
+[18/Jun/2016 21:43:54] "POST /musicbox/addsongs/ HTTP/1.1" 200 4166
+[18/Jun/2016 21:44:02] "GET /musicbox/play/?song_id=698 HTTP/1.1" 200 16958
+[18/Jun/2016 21:44:12] "GET /musicbox/play/?song_id=698 HTTP/1.1" 200 16958
+[18/Jun/2016 21:44:18] "GET /musicbox/playlist/?pid=20 HTTP/1.1" 200 9695
+[18/Jun/2016 21:44:21] "GET /musicbox/play/?song_id=698 HTTP/1.1" 200 18675
+[18/Jun/2016 21:44:59] "GET /musicbox/stop/?song_id=698 HTTP/1.1" 200 19713
+[18/Jun/2016 21:44:59] "GET /musicbox/stop/?song_id=698 HTTP/1.1" 200 19713
+[18/Jun/2016 21:45:00] "GET /musicbox/playlist/?pid=17 HTTP/1.1" 200 10763
+[18/Jun/2016 21:45:01] "GET /musicbox/playlist/?pid=19 HTTP/1.1" 200 4826
+[18/Jun/2016 21:45:03] "GET /musicbox/playlist/?pid=1 HTTP/1.1" 200 6522
+[18/Jun/2016 21:45:05] "GET /musicbox/play/?song_id=698 HTTP/1.1" 200 16958
+[18/Jun/2016 21:48:37] "GET /musicbox/playlist/?pid=20 HTTP/1.1" 200 9695
+[18/Jun/2016 21:48:38] "GET /musicbox/playlist/?pid=19 HTTP/1.1" 200 4826
+[18/Jun/2016 21:48:40] "GET /musicbox/playlist/?pid=15 HTTP/1.1" 200 139566
+[18/Jun/2016 21:48:42] "GET /musicbox/playlist/?pid=14 HTTP/1.1" 200 19826
+[18/Jun/2016 21:48:50] "POST /musicbox/search/ HTTP/1.1" 200 10623
+[18/Jun/2016 21:49:04] "GET /musicbox/searchPlaylist/?searchStrList=Hazune+Miku HTTP/1.1" 200 11392
+Internal Server Error: /musicbox/searchPlaylist/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/tom/python_env/mynetease/musicbox/views.py", line 226, in searchPlaylist
+    listinfo = getListInfo(request.GET['searchStrList'])  # add search type in the future!!!
+  File "/root/tom/python_env/mynetease/musicbox/views.py", line 215, in getListInfo
+    return netease.dig_info(data['result']['playlists'], 'top_playlists')
+KeyError: 'playlists'
+[18/Jun/2016 21:49:16] "GET /musicbox/searchPlaylist/?searchStrList=Hazune+Miku+nmtzwh HTTP/1.1" 500 13312
+[18/Jun/2016 21:49:30] "GET /musicbox/searchPlaylist/?searchStrList=Hazune+Miku HTTP/1.1" 200 11392
+[18/Jun/2016 21:49:59] "GET /musicbox/searchPlaylist/?searchStrList=Hatsune+Miku HTTP/1.1" 200 12342
+Internal Server Error: /musicbox/searchPlaylist/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/tom/python_env/mynetease/musicbox/views.py", line 226, in searchPlaylist
+    listinfo = getListInfo(request.GET['searchStrList'])  # add search type in the future!!!
+  File "/root/tom/python_env/mynetease/musicbox/views.py", line 215, in getListInfo
+    return netease.dig_info(data['result']['playlists'], 'top_playlists')
+KeyError: 'playlists'
+[18/Jun/2016 21:50:12] "GET /musicbox/searchPlaylist/?searchStrList=Hatsune+Miku+nmtzwh HTTP/1.1" 500 13315
+[18/Jun/2016 21:52:01] "POST /musicbox/addplaylist/ HTTP/1.1" 200 123983
+[18/Jun/2016 21:53:08] "GET /musicbox/stop/?song_id=0 HTTP/1.1" 200 123983
+[18/Jun/2016 21:53:24] "GET /musicbox/play/?song_id=946 HTTP/1.1" 200 123983
+[18/Jun/2016 21:54:54] "GET /musicbox/stop/?song_id=946 HTTP/1.1" 200 123983
+[18/Jun/2016 22:14:49] "GET /musicbox/play/?song_id=946 HTTP/1.1" 200 123983
+[18/Jun/2016 22:22:04] "GET /musicbox/play/?song_id=994 HTTP/1.1" 200 123983
+[18/Jun/2016 22:54:10] "GET /musicbox/stop/?song_id=994 HTTP/1.1" 200 123983
+[20/Jun/2016 18:30:42] "GET /musicbox HTTP/1.1" 301 0
+[20/Jun/2016 18:30:43] "GET /musicbox/ HTTP/1.1" 200 123983
+[20/Jun/2016 18:30:43] "GET /static/css/base.css HTTP/1.1" 200 3858
+[20/Jun/2016 18:30:43] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 28931
+[20/Jun/2016 18:30:43] "GET /static/css/bootstrap.css HTTP/1.1" 200 115805
+[20/Jun/2016 18:30:44] "GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2 HTTP/1.1" 200 71760
+Not Found: /favicon.ico
+[20/Jun/2016 18:30:44] "GET /favicon.ico HTTP/1.1" 404 2045
+[20/Jun/2016 18:30:47] "GET /musicbox/playlist/?pid=22 HTTP/1.1" 200 129601
+[20/Jun/2016 18:30:48] "GET /musicbox/play/?song_id=0 HTTP/1.1" 200 123983
+[20/Jun/2016 18:30:58] "GET /musicbox/playlist/?pid=19 HTTP/1.1" 200 4919
+[20/Jun/2016 18:30:59] "GET /musicbox/playlist/?pid=22 HTTP/1.1" 200 129601
+[20/Jun/2016 18:31:01] "GET /musicbox/playlist/?pid=22 HTTP/1.1" 200 129601
+[20/Jun/2016 18:31:10] "GET /musicbox/play/?song_id=994 HTTP/1.1" 200 123983
+[20/Jun/2016 18:31:14] "GET /musicbox/stop/?song_id=994 HTTP/1.1" 200 123983
+[20/Jun/2016 18:31:15] "GET /musicbox/stop/?song_id=994 HTTP/1.1" 200 123983
+[20/Jun/2016 18:31:16] "GET /musicbox/stop/?song_id=994 HTTP/1.1" 200 123983
+[20/Jun/2016 18:31:16] "GET /musicbox/stop/?song_id=994 HTTP/1.1" 200 123983
+[20/Jun/2016 18:31:20] "GET /musicbox/play/?song_id=994 HTTP/1.1" 200 123983
+Not Found: /favicon.ico
+[20/Jun/2016 19:35:33] "GET /favicon.ico HTTP/1.1" 404 2045
+[20/Jun/2016 19:35:33] "GET /musicbox/playlist/?pid=10 HTTP/1.1" 200 6535
+[20/Jun/2016 19:35:34] "GET /musicbox/playlist/?pid=9 HTTP/1.1" 200 9107
+[20/Jun/2016 19:35:35] "GET /musicbox/playlist/?pid=10 HTTP/1.1" 200 6535
+[20/Jun/2016 19:35:37] "GET /musicbox/play/?song_id=994 HTTP/1.1" 200 15861
+[20/Jun/2016 19:35:48] "GET /musicbox/stop/?song_id=994 HTTP/1.1" 200 16970
+[20/Jun/2016 19:35:48] "GET /musicbox/stop/?song_id=994 HTTP/1.1" 200 16970
+[20/Jun/2016 19:35:48] "GET /musicbox/stop/?song_id=994 HTTP/1.1" 200 16970
+[20/Jun/2016 19:35:48] "GET /musicbox/stop/?song_id=994 HTTP/1.1" 200 16970
+[20/Jun/2016 19:35:49] "GET /musicbox/stop/?song_id=994 HTTP/1.1" 200 16970
+[20/Jun/2016 19:35:49] "GET /musicbox/stop/?song_id=994 HTTP/1.1" 200 16970
+[20/Jun/2016 19:35:52] "GET /musicbox/play/?song_id=98 HTTP/1.1" 200 16970
+[20/Jun/2016 19:44:12] "GET /musicbox/stop/?song_id=98 HTTP/1.1" 200 16970
+[10/Sep/2016 20:51:03] "GET /musicbox/ HTTP/1.1" 200 123983
+[10/Sep/2016 20:51:03] "GET /static/css/base.css HTTP/1.1" 304 0
+[10/Sep/2016 20:51:03] "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+[10/Sep/2016 20:51:03] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 0
+[10/Sep/2016 20:51:03] "GET /static/js/tether.min.js HTTP/1.1" 304 0
+[10/Sep/2016 20:51:03] "GET /static/js/bootstrap.js HTTP/1.1" 304 0
+[10/Sep/2016 20:51:03] "GET /static/js/slideout.min.js HTTP/1.1" 304 0
+/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py:67: UserWarning: A {% csrf_token %} was used in a template, but the context did not provide the value.  This is usually caused by not using RequestContext.
+  "A {% csrf_token %} was used in a template, but the context "
+
+[10/Sep/2016 20:51:25] "POST /musicbox/search/ HTTP/1.1" 200 27449
+[10/Sep/2016 20:51:36] "GET /musicbox/searchPlaylist/?searchStrList=%E6%97%A5%E5%85%A8%E8%9A%80%E6%BC%94%E5%94%B1%E4%BC%9A%E7%8E%B0%E5%9C%BA%E5%AE%9E%E5%BD%95 HTTP/1.1" 200 12461
+[10/Sep/2016 20:51:51] "POST /musicbox/addplaylist/ HTTP/1.1" 200 23013
+[10/Sep/2016 20:51:59] "GET /musicbox/play/?song_id=1021 HTTP/1.1" 200 23013
+[10/Sep/2016 21:14:34] "GET /musicbox/stop/?song_id=1021 HTTP/1.1" 200 23013
+[10/Sep/2016 22:24:21] "GET /musicbox/play/?song_id=1021 HTTP/1.1" 200 23013
+[10/Sep/2016 22:46:50] "GET /musicbox/stop/?song_id=1027 HTTP/1.1" 200 23013
+[11/Sep/2016 09:24:48] "GET /musicbox HTTP/1.1" 301 0
+[11/Sep/2016 09:24:49] "GET /musicbox/ HTTP/1.1" 200 23013
+[11/Sep/2016 09:24:49] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 28931
+[11/Sep/2016 09:24:49] "GET /static/js/slideout.min.js HTTP/1.1" 200 6865
+[11/Sep/2016 09:24:49] "GET /static/css/base.css HTTP/1.1" 200 3858
+[11/Sep/2016 09:24:49] "GET /static/css/bootstrap.css HTTP/1.1" 200 115805
+[11/Sep/2016 09:24:49] "GET /static/js/tether.min.js HTTP/1.1" 200 23144
+[11/Sep/2016 09:24:49] "GET /static/js/bootstrap.js HTTP/1.1" 200 99695
+[11/Sep/2016 09:24:49] "GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2 HTTP/1.1" 200 71760
+Not Found: /favicon.ico
+[11/Sep/2016 09:24:50] "GET /favicon.ico HTTP/1.1" 404 2045
+[11/Sep/2016 09:25:18] "POST /musicbox/search/ HTTP/1.1" 200 10310
+[11/Sep/2016 09:25:22] "POST /musicbox/addsongs/ HTTP/1.1" 200 10392
+[11/Sep/2016 09:25:25] "GET /musicbox/play/?song_id=1030 HTTP/1.1" 200 23384
+[11/Sep/2016 09:25:32] "GET /musicbox/ HTTP/1.1" 200 23384
+[11/Sep/2016 10:31:32] "GET /musicbox/stop/?song_id=0 HTTP/1.1" 200 23384
+Not Found: /
+[11/Sep/2016 14:14:02] "GET / HTTP/1.0" 404 2012
+[11/Sep/2016 21:58:40] "GET /musicbox/ HTTP/1.1" 200 23384
+[11/Sep/2016 21:58:40] "GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2 HTTP/1.1" 200 71760
+Not Found: /favicon.ico
+[11/Sep/2016 21:58:40] "GET /favicon.ico HTTP/1.1" 404 2045
+[11/Sep/2016 21:58:48] "GET /musicbox/playlist/?pid=22 HTTP/1.1" 200 129742
+[11/Sep/2016 21:58:54] "GET /musicbox/playlist/?pid=14 HTTP/1.1" 200 20060
+[11/Sep/2016 21:59:07] "GET /musicbox/playlist/?pid=6 HTTP/1.1" 200 12223
+[11/Sep/2016 21:59:09] "GET /musicbox/play/?song_id=0 HTTP/1.1" 200 22422
+[11/Sep/2016 22:23:00] "GET /musicbox/stop/?song_id=0 HTTP/1.1" 200 22422
+[11/Sep/2016 22:39:54] "GET /musicbox/ HTTP/1.1" 200 23384
+[11/Sep/2016 22:39:54] "GET /static/css/base.css HTTP/1.1" 200 3858
+[11/Sep/2016 22:39:54] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 28931
+[11/Sep/2016 22:39:54] "GET /static/css/bootstrap.css HTTP/1.1" 200 115805
+[11/Sep/2016 22:39:54] "GET /static/js/tether.min.js HTTP/1.1" 200 23144
+[11/Sep/2016 22:39:54] "GET /static/js/slideout.min.js HTTP/1.1" 200 6865
+[11/Sep/2016 22:39:54] "GET /static/js/bootstrap.js HTTP/1.1" 200 99695
+[11/Sep/2016 22:39:54] "GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2 HTTP/1.1" 200 71760
+Not Found: /favicon.ico
+[11/Sep/2016 22:39:55] "GET /favicon.ico HTTP/1.1" 404 2045
+[11/Sep/2016 22:46:26] "GET /musicbox/play/?song_id=1030 HTTP/1.1" 200 23384
+[11/Sep/2016 23:11:19] "GET /musicbox/stop/?song_id=1030 HTTP/1.1" 200 23384
+[12/Sep/2016 21:22:56] "GET /musicbox HTTP/1.1" 301 0
+[12/Sep/2016 21:22:56] "GET /musicbox/ HTTP/1.1" 200 23384
+Not Found: /favicon.ico
+[12/Sep/2016 21:22:56] "GET /favicon.ico HTTP/1.1" 404 2045
+[12/Sep/2016 21:23:01] "GET /musicbox/play/?song_id=1030 HTTP/1.1" 200 23384
+[12/Sep/2016 21:33:51] "GET /musicbox/ HTTP/1.1" 200 23384
+Not Found: /favicon.ico
+[12/Sep/2016 21:33:52] "GET /favicon.ico HTTP/1.1" 404 2045
+[12/Sep/2016 21:34:07] "GET /musicbox/stop/?song_id=0 HTTP/1.1" 200 23384
+[12/Sep/2016 21:40:41] "GET /musicbox/ HTTP/1.1" 200 23384
+Not Found: /favicon.ico
+[12/Sep/2016 21:40:41] "GET /favicon.ico HTTP/1.1" 404 2045
+[12/Sep/2016 21:40:43] "GET /musicbox/play/?song_id=0 HTTP/1.1" 200 23384
+[12/Sep/2016 22:17:08] "GET /musicbox/stop/?song_id=0 HTTP/1.1" 200 23384
+[13/Sep/2016 21:38:04] "GET /musicbox/ HTTP/1.1" 200 23384
+Not Found: /favicon.ico
+[13/Sep/2016 21:38:05] "GET /favicon.ico HTTP/1.1" 404 2045
+[13/Sep/2016 21:38:24] "GET /musicbox/playlist/?pid=20 HTTP/1.1" 200 9929
+[13/Sep/2016 21:38:25] "GET /musicbox/playlist/?pid=17 HTTP/1.1" 200 10997
+[13/Sep/2016 21:38:26] "GET /musicbox/playlist/?pid=15 HTTP/1.1" 200 139800
+[13/Sep/2016 21:38:27] "GET /musicbox/playlist/?pid=14 HTTP/1.1" 200 20060
+[13/Sep/2016 21:38:27] "GET /musicbox/playlist/?pid=13 HTTP/1.1" 200 45244
+[13/Sep/2016 21:38:28] "GET /musicbox/playlist/?pid=14 HTTP/1.1" 200 20060
+[13/Sep/2016 21:38:31] "GET /musicbox/play/?song_id=0 HTTP/1.1" 200 28600
+[13/Sep/2016 21:38:44] "GET /musicbox/play/?song_id=210 HTTP/1.1" 200 28600
+[13/Sep/2016 21:38:50] "GET /musicbox/playlist/?pid=9 HTTP/1.1" 200 9248
+[13/Sep/2016 21:38:51] "GET /musicbox/play/?song_id=210 HTTP/1.1" 200 18131
+[13/Sep/2016 21:38:56] "GET /musicbox/play/?song_id=606 HTTP/1.1" 200 19329
+[13/Sep/2016 22:34:48] "GET /musicbox/stop/?song_id=606 HTTP/1.1" 200 19329
+Not Found: /http:/180.163.113.82/check_proxy
+[15/Sep/2016 01:13:27] "HEAD http://180.163.113.82/check_proxy HTTP/1.1" 404 0
+[15/Sep/2016 07:53:10] code 400, message Bad request syntax ('\x04\x01\x00P\xb4\xa3qR\x00')
+[15/Sep/2016 07:53:10] 
+[15/Sep/2016 07:53:52] code 400, message Bad request syntax ('\x05\x02\x00\x02')
+[15/Sep/2016 07:53:52] " " 400 -
+[18/Sep/2016 20:49:15] "GET /musicbox HTTP/1.1" 301 0
+[18/Sep/2016 20:49:15] "GET /musicbox/ HTTP/1.1" 200 23384
+[18/Sep/2016 20:49:15] "GET /static/js/slideout.min.js HTTP/1.1" 200 6865
+[18/Sep/2016 20:49:15] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 28931
+[18/Sep/2016 20:49:15] "GET /static/css/base.css HTTP/1.1" 200 3858
+[18/Sep/2016 20:49:15] "GET /static/js/bootstrap.js HTTP/1.1" 200 99695
+[18/Sep/2016 20:49:15] "GET /static/css/bootstrap.css HTTP/1.1" 200 115805
+[18/Sep/2016 20:49:15] "GET /static/js/tether.min.js HTTP/1.1" 200 23144
+[18/Sep/2016 20:49:16] "GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2 HTTP/1.1" 200 71760
+Not Found: /favicon.ico
+[18/Sep/2016 20:49:16] "GET /favicon.ico HTTP/1.1" 404 2045
+[18/Sep/2016 20:49:23] "GET /musicbox/playlist/?pid=22 HTTP/1.1" 200 129742
+[18/Sep/2016 20:49:26] "GET /musicbox/play/?song_id=0 HTTP/1.1" 200 124072
+[18/Sep/2016 20:49:39] "GET /musicbox/play/?song_id=994 HTTP/1.1" 200 124072
+[18/Sep/2016 20:49:46] "GET /musicbox/playlist/?pid=10 HTTP/1.1" 200 6296
+[18/Sep/2016 20:49:48] "GET /musicbox/play/?song_id=97 HTTP/1.1" 200 16729
+[18/Sep/2016 21:21:00] "GET /musicbox/stop/?song_id=97 HTTP/1.1" 200 16729
+[18/Sep/2016 21:46:33] "GET /musicbox/ HTTP/1.1" 200 23384
+[18/Sep/2016 21:46:33] "GET /static/css/base.css HTTP/1.1" 200 3858
+[18/Sep/2016 21:46:33] "GET /static/js/slideout.min.js HTTP/1.1" 200 6865
+[18/Sep/2016 21:46:33] "GET /static/js/tether.min.js HTTP/1.1" 200 23144
+[18/Sep/2016 21:46:33] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 28931
+[18/Sep/2016 21:46:33] "GET /static/css/bootstrap.css HTTP/1.1" 200 115805
+[18/Sep/2016 21:46:33] "GET /static/js/bootstrap.js HTTP/1.1" 200 99695
+[18/Sep/2016 21:46:33] "GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2 HTTP/1.1" 200 71760
+Not Found: /favicon.ico
+[18/Sep/2016 21:46:33] "GET /favicon.ico HTTP/1.1" 404 2045
+[18/Sep/2016 21:46:38] "GET /musicbox/play/?song_id=1030 HTTP/1.1" 200 23384
+[18/Sep/2016 21:50:47] "GET /musicbox/stop/?song_id=1030 HTTP/1.1" 200 23384
+[19/Sep/2016 21:38:29] "GET /musicbox/ HTTP/1.1" 200 23384
+[19/Sep/2016 21:38:29] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 28931
+[19/Sep/2016 21:38:29] "GET /static/css/base.css HTTP/1.1" 200 3858
+[19/Sep/2016 21:38:29] "GET /static/css/bootstrap.css HTTP/1.1" 200 115805
+[19/Sep/2016 21:38:29] "GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2 HTTP/1.1" 200 71760
+Not Found: /favicon.ico
+[19/Sep/2016 21:38:29] "GET /favicon.ico HTTP/1.1" 404 2045
+[19/Sep/2016 21:38:34] "GET /musicbox/playlist/?pid=20 HTTP/1.1" 200 9929
+[19/Sep/2016 21:38:35] "GET /musicbox/playlist/?pid=17 HTTP/1.1" 200 10997
+[19/Sep/2016 21:38:39] "GET /musicbox/playlist/?pid=17 HTTP/1.1" 200 10997
+Internal Server Error: /musicbox/searchPlaylist/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/tom/python_env/mynetease/musicbox/views.py", line 226, in searchPlaylist
+    listinfo = getListInfo(request.GET['searchStrList'])  # add search type in the future!!!
+  File "/root/tom/python_env/mynetease/musicbox/views.py", line 215, in getListInfo
+    return netease.dig_info(data['result']['playlists'], 'top_playlists')
+KeyError: 'playlists'
+[19/Sep/2016 21:39:03] "GET /musicbox/searchPlaylist/?searchStrList=from+fm+nmtzwh HTTP/1.1" 500 13379
+[19/Sep/2016 21:39:15] "GET /musicbox/searchPlaylist/?searchStrList=from+fm HTTP/1.1" 200 11979
+[19/Sep/2016 21:39:32] "GET /musicbox/searchPlaylist/?searchStrList=from+fm HTTP/1.1" 200 11979
+[19/Sep/2016 21:39:56] "POST /musicbox/addplaylist/ HTTP/1.1" 200 61351
+[19/Sep/2016 21:39:59] "GET /musicbox/playlist/?pid=24 HTTP/1.1" 200 58096
+[19/Sep/2016 21:40:22] "GET /musicbox/play/?song_id=1037 HTTP/1.1" 200 61351
+[19/Sep/2016 21:47:15] "GET /static/css/bootstrap.css.map HTTP/1.1" 200 49447
+[19/Sep/2016 22:10:20] "GET /musicbox/stop/?song_id=1160 HTTP/1.1" 200 61351
+Not Found: /
+[20/Sep/2016 21:44:04] "GET / HTTP/1.1" 404 2020
+[21/Sep/2016 12:35:48] "GET /musicbox/ HTTP/1.1" 200 61351
+Not Found: /favicon.ico
+[21/Sep/2016 12:35:49] "GET /favicon.ico HTTP/1.1" 404 2045
+[21/Sep/2016 12:35:57] "GET /musicbox/searchPlaylist/?searchStrList=Tommy HTTP/1.1" 200 11850
+[21/Sep/2016 12:36:10] "POST /musicbox/addplaylist/ HTTP/1.1" 200 30900
+[21/Sep/2016 12:36:23] "GET /musicbox/play/?song_id=1179 HTTP/1.1" 200 30900
+[21/Sep/2016 12:48:06] "GET /musicbox/play/?song_id=1193 HTTP/1.1" 200 30900
+[21/Sep/2016 12:51:05] "GET /musicbox/play/?song_id=1203 HTTP/1.1" 200 30900
+[21/Sep/2016 12:51:34] "GET /musicbox/stop/?song_id=1203 HTTP/1.1" 200 30900
+[21/Sep/2016 14:21:10] "GET /musicbox/ HTTP/1.1" 200 30900
+Not Found: /favicon.ico
+[21/Sep/2016 14:21:10] "GET /favicon.ico HTTP/1.1" 404 2045
+[21/Sep/2016 14:21:13] "GET /musicbox/playlist/?pid=13 HTTP/1.1" 200 45451
+[21/Sep/2016 14:21:17] "GET /musicbox/playlist/?pid=1 HTTP/1.1" 200 6963
+/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py:67: UserWarning: A {% csrf_token %} was used in a template, but the context did not provide the value.  This is usually caused by not using RequestContext.
+  "A {% csrf_token %} was used in a template, but the context "
+
+[21/Sep/2016 14:21:21] "POST /musicbox/search/ HTTP/1.1" 200 48284
+[21/Sep/2016 14:21:25] "POST /musicbox/addsongs/ HTTP/1.1" 200 4488
+[21/Sep/2016 14:21:27] "GET /musicbox/play/?song_id=1213 HTTP/1.1" 200 17591
+[21/Sep/2016 14:22:06] "GET /musicbox/stop/?song_id=1213 HTTP/1.1" 200 17591
+[21/Sep/2016 14:22:27] "GET /musicbox/play/?song_id=1213 HTTP/1.1" 200 17591
+[21/Sep/2016 14:22:37] "GET /musicbox/stop/?song_id=1213 HTTP/1.1" 200 17591
+[21/Sep/2016 16:49:38] "GET /musicbox/ HTTP/1.1" 200 30900
+Not Found: /favicon.ico
+[21/Sep/2016 16:49:38] "GET /favicon.ico HTTP/1.1" 404 2045
+[21/Sep/2016 16:49:41] "GET /musicbox/play/?song_id=0 HTTP/1.1" 200 30900
+[21/Sep/2016 17:17:49] "GET /musicbox/stop/?song_id=1204 HTTP/1.1" 200 30900
+Not Found: /http:/180.163.113.82/check_proxy
+[22/Sep/2016 01:27:13] "HEAD http://180.163.113.82/check_proxy HTTP/1.1" 404 0
+[22/Sep/2016 07:41:06] code 400, message Bad request syntax ('\x04\x01\x00P\xb4\xa3qR\x00')
+[22/Sep/2016 07:41:06] 
+[22/Sep/2016 07:41:49] code 400, message Bad request syntax ('\x05\x02\x00\x02')
+[22/Sep/2016 07:41:49] " " 400 -
+[24/Sep/2016 10:11:50] "GET /musicbox/ HTTP/1.1" 200 30900
+Not Found: /favicon.ico
+[24/Sep/2016 10:11:51] "GET /favicon.ico HTTP/1.1" 404 2045
+[24/Sep/2016 10:12:06] "GET /musicbox/searchPlaylist/?searchStrList=beyond HTTP/1.1" 200 12648
+[24/Sep/2016 10:12:25] "POST /musicbox/addplaylist/ HTTP/1.1" 200 55980
+[24/Sep/2016 10:12:31] "GET /musicbox/play/?song_id=0 HTTP/1.1" 200 55980
+[24/Sep/2016 11:42:06] "GET /musicbox/ HTTP/1.1" 200 55980
+Not Found: /favicon.ico
+[24/Sep/2016 11:42:07] "GET /favicon.ico HTTP/1.1" 404 2045
+[24/Sep/2016 11:42:08] "GET /musicbox/stop/?song_id=0 HTTP/1.1" 200 55980
+[24/Sep/2016 12:39:17] "GET /musicbox/play/?song_id=0 HTTP/1.1" 200 55980
+[24/Sep/2016 13:42:10] "GET /musicbox/stop/?song_id=0 HTTP/1.1" 200 55980
+[24/Sep/2016 15:02:48] "GET /musicbox/playlist/?pid=25 HTTP/1.1" 200 21200
+[24/Sep/2016 15:02:49] "GET /musicbox/play/?song_id=0 HTTP/1.1" 200 30998
+[24/Sep/2016 18:24:03] "GET /musicbox/play/?song_id=1165 HTTP/1.1" 200 30998
+[24/Sep/2016 18:26:43] "GET /musicbox/stop/?song_id=1165 HTTP/1.1" 200 30998
+[24/Sep/2016 21:00:05] "GET /musicbox/ HTTP/1.1" 200 55980
+[24/Sep/2016 21:00:08] "GET /musicbox/playlist/?pid=23 HTTP/1.1" 200 14820
+[24/Sep/2016 21:00:10] "GET /musicbox/play/?song_id=0 HTTP/1.1" 200 23633
+[24/Sep/2016 21:18:43] "GET /musicbox/stop/?song_id=0 HTTP/1.1" 200 23633
+[24/Sep/2016 22:33:35] "GET /musicbox/ HTTP/1.1" 200 55980
+[24/Sep/2016 22:33:52] "GET /musicbox/searchPlaylist/?searchStrList=%E8%96%9B%E4%B9%8B%E8%B0%A6 HTTP/1.1" 200 12042
+[24/Sep/2016 22:34:05] "POST /musicbox/addplaylist/ HTTP/1.1" 200 34363
+[24/Sep/2016 22:34:08] "GET /musicbox/play/?song_id=0 HTTP/1.1" 200 34363
+[24/Sep/2016 23:09:29] "GET /musicbox/stop/?song_id=0 HTTP/1.1" 200 34363
+Not Found: /http:/180.163.113.82/check_proxy
+[29/Sep/2016 01:18:43] "HEAD http://180.163.113.82/check_proxy HTTP/1.1" 404 0
+[29/Sep/2016 07:09:33] code 400, message Bad request syntax ('\x04\x01\x00P\xb4\xa3qR\x00')
+[29/Sep/2016 07:09:33] 
+[29/Sep/2016 07:10:17] code 400, message Bad request syntax ('\x05\x02\x00\x02')
+[29/Sep/2016 07:10:17] " " 400 -
+Not Found: /http:/180.163.113.82/check_proxy
+[06/Oct/2016 01:19:34] "HEAD http://180.163.113.82/check_proxy HTTP/1.1" 404 0
+[06/Oct/2016 07:12:38] code 400, message Bad request syntax ('\x04\x01\x00P\xb4\xa3qR\x00')
+[06/Oct/2016 07:12:38] 
+[06/Oct/2016 07:13:21] code 400, message Bad request syntax ('\x05\x02\x00\x02')
+[06/Oct/2016 07:13:21] " " 400 -
+[25/Nov/2016 18:39:33] "GET /musicbox HTTP/1.1" 301 0
+[25/Nov/2016 18:39:33] "GET /musicbox/ HTTP/1.1" 200 34363
+[25/Nov/2016 18:39:33] "GET /static/css/base.css HTTP/1.1" 200 3858
+[25/Nov/2016 18:39:33] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 28931
+[25/Nov/2016 18:39:33] "GET /static/css/bootstrap.css HTTP/1.1" 200 115805
+[25/Nov/2016 18:39:33] "GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2 HTTP/1.1" 200 71760
+[25/Nov/2016 18:39:33] "GET /static/js/bootstrap.js HTTP/1.1" 200 99695
+[25/Nov/2016 18:39:33] "GET /static/js/tether.min.js HTTP/1.1" 200 23144
+[25/Nov/2016 18:39:33] "GET /static/js/slideout.min.js HTTP/1.1" 200 6865
+Not Found: /favicon.ico
+[25/Nov/2016 18:39:33] "GET /favicon.ico HTTP/1.1" 404 2045
+/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py:67: UserWarning: A {% csrf_token %} was used in a template, but the context did not provide the value.  This is usually caused by not using RequestContext.
+  "A {% csrf_token %} was used in a template, but the context "
+
+[25/Nov/2016 18:39:58] "POST /musicbox/search/ HTTP/1.1" 200 52196
+[25/Nov/2016 18:40:03] "POST /musicbox/addsongs/ HTTP/1.1" 200 21311
+[25/Nov/2016 18:40:06] "GET /musicbox/play/?song_id=1399 HTTP/1.1" 200 34707
+[25/Nov/2016 18:40:19] "GET /musicbox/play/?song_id=1399 HTTP/1.1" 200 34707
+[25/Nov/2016 18:40:29] "GET /musicbox/playlist/?pid=23 HTTP/1.1" 200 15015
+[25/Nov/2016 18:40:33] "GET /musicbox/play/?song_id=1023 HTTP/1.1" 200 23749
+[25/Nov/2016 18:40:37] "GET /musicbox/playlist/?pid=22 HTTP/1.1" 200 130297
+[25/Nov/2016 18:41:02] "GET /musicbox/stop/?song_id=1023 HTTP/1.1" 200 124437
+- Broken pipe from ('192.168.1.230', 2979)
+[27/Nov/2016 10:14:09] "GET /musicbox HTTP/1.1" 301 0
+[27/Nov/2016 10:14:10] "GET /musicbox/ HTTP/1.1" 200 34707
+[27/Nov/2016 10:14:10] "GET /static/css/base.css HTTP/1.1" 200 3858
+[27/Nov/2016 10:14:10] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 28931
+[27/Nov/2016 10:14:10] "GET /static/css/bootstrap.css HTTP/1.1" 200 115805
+[27/Nov/2016 10:14:10] "GET /static/js/tether.min.js HTTP/1.1" 200 23144
+[27/Nov/2016 10:14:10] "GET /static/js/slideout.min.js HTTP/1.1" 200 6865
+[27/Nov/2016 10:14:10] "GET /static/js/bootstrap.js HTTP/1.1" 200 99695
+[27/Nov/2016 10:14:10] "GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2 HTTP/1.1" 200 71760
+Not Found: /favicon.ico
+[27/Nov/2016 10:14:10] "GET /favicon.ico HTTP/1.1" 404 2045
+[27/Nov/2016 10:14:14] "GET /musicbox/playlist/?pid=22 HTTP/1.1" 200 130297
+[27/Nov/2016 10:14:15] "GET /musicbox/playlist/?pid=27 HTTP/1.1" 200 27361
+[27/Nov/2016 10:14:17] "GET /musicbox/playlist/?pid=27 HTTP/1.1" 200 27361
+[27/Nov/2016 10:16:50] "GET /static/css/bootstrap.css.map HTTP/1.1" 200 49447
+[27/Nov/2016 10:23:19] "POST /musicbox/search/ HTTP/1.1" 200 23026
+[27/Nov/2016 10:23:25] "POST /musicbox/addsongs/ HTTP/1.1" 200 21667
+[27/Nov/2016 10:23:53] "GET /musicbox/play/?song_id=1400 HTTP/1.1" 200 35063
+[27/Nov/2016 10:23:57] "GET /musicbox/play/?song_id=1400 HTTP/1.1" 200 35063
+[27/Nov/2016 10:24:02] "GET /musicbox/playlist/?pid=14 HTTP/1.1" 200 20615
+[27/Nov/2016 10:24:03] "GET /musicbox/play/?song_id=1400 HTTP/1.1" 200 27402
+[27/Nov/2016 10:24:06] "GET /musicbox/stop/?song_id=1400 HTTP/1.1" 200 28965
+[27/Nov/2016 10:24:06] "GET /musicbox/play/?song_id=1400 HTTP/1.1" 200 27402
+[27/Nov/2016 10:24:14] "GET /musicbox/play/?song_id=238 HTTP/1.1" 200 28965
+[27/Nov/2016 10:24:18] "GET /musicbox/playlist/?pid=23 HTTP/1.1" 200 15015
+[27/Nov/2016 10:24:20] "GET /musicbox/play/?song_id=238 HTTP/1.1" 200 22186
+[27/Nov/2016 10:24:23] "GET /musicbox/stop/?song_id=238 HTTP/1.1" 200 23749
+[27/Nov/2016 10:24:24] "GET /musicbox/stop/?song_id=238 HTTP/1.1" 200 23749
+[27/Nov/2016 10:24:24] "GET /musicbox/stop/?song_id=238 HTTP/1.1" 200 23749
+[27/Nov/2016 10:24:24] "GET /musicbox/play/?song_id=238 HTTP/1.1" 200 22186

@@ -1,0 +1,123 @@
+18,21c18
+< try:
+<     from http.cookiejar import MozillaCookieJar
+< except ImportError:
+<     from cookielib import MozillaCookieJar 
+---
+> from cookielib import LWPCookieJar
+24c21
+< # import logger
+---
+> import logger
+28,29c25,26
+< # from config import Config
+< from musicbox.storage import Storage
+---
+> from config import Config
+> from storage import Storage
+59c56
+< # log = logger.getLogger(__name__)
+---
+> log = logger.getLogger(__name__)
+81,97d77
+< def encrypted_login(username, password):
+<     text = {
+<         'username': username,
+<         'password': password,
+<         'rememberLogin': 'true'
+<     }
+<     text = json.dumps(text)
+<     secKey = createSecretKey(16)
+<     encText = aesEncrypt(aesEncrypt(text, nonce), secKey)
+<     encSecKey = rsaEncrypt(secKey, pubKey, modulus)
+<     data = {
+<         'params': encText,
+<         'encSecKey': encSecKey
+<     }
+<     return data
+< 
+< 
+110,126d89
+< def encrypted_phonelogin(username, password):
+<     text = {
+<         'phone': username,
+<         'password': password,
+<         'rememberLogin': 'true'
+<     }
+<     text = json.dumps(text)
+<     secKey = createSecretKey(16)
+<     encText = aesEncrypt(aesEncrypt(text, nonce), secKey)
+<     encSecKey = rsaEncrypt(secKey, pubKey, modulus)
+<     data = {
+<         'params': encText,
+<         'encSecKey': encSecKey
+<     }
+<     return data
+< 
+< 
+138c101
+<     rs = int(text.encode('hex'), 16) ** int(pubKey, 16) % int(modulus, 16)
+---
+>     rs = pow(int(text.encode('hex'), 16),  int(pubKey, 16), int(modulus, 16))
+155,156c118,119
+<     # config = Config()
+<     quality = 0  # Config().get_item("music_quality")
+---
+>     config = Config()
+>     quality = Config().get_item("music_quality")
+194c157
+<         self.session.cookies = MozillaCookieJar(self.storage.cookie_path)
+---
+>         self.session.cookies = LWPCookieJar(self.storage.cookie_path)
+256c219,224
+<         data = encrypted_login(username, password)
+---
+>         text = {
+>             'username': username,
+>             'password': password,
+>             'rememberLogin': 'true'
+>         }
+>         data = encrypted_request(text)
+265c233,238
+<         data = encrypted_phonelogin(username, password)
+---
+>         text = {
+>             'phone': username,
+>             'password': password,
+>             'rememberLogin': 'true'
+>         }
+>         data = encrypted_request(text)
+270a244,255
+>     # 每日签到
+>     def daily_signin(self, type):
+>         action = 'http://music.163.com/weapi/point/dailyTask'
+>         text = {
+>             'type': type
+>         }
+>         data = encrypted_request(text)
+>         try:
+>             return self.httpRequest('POST', action, data)
+>         except:
+>             return -1
+> 
+359c344
+<             'limit': 60
+---
+>             'limit': limit
+483a469,480
+>     def song_tlyric(self, music_id):
+>         action = "http://music.163.com/api/song/lyric?os=osx&id=" + str(music_id) + "&lv=-1&kv=-1&tv=-1"
+>         try:
+>             data = self.httpRequest('GET', action)
+>             if data['tlyric']['lyric'] != None:
+>                 lyric_info = data['tlyric']['lyric'][1:]
+>             else:
+>                 lyric_info = '未找到歌词翻译'
+>             return lyric_info
+>         except:
+>             return []
+> 
+604c601
+<             # log.debug(data)
+---
+>             log.debug(data)

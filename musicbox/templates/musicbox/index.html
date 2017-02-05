@@ -1,0 +1,124 @@
+{% extends "musicbox/base.html" %}
+{% load staticfiles %}
+
+{% block title %}Netease Music Simple{% endblock %}
+
+{% block sidebar %}
+{% if latest_playlist %}
+    <ul class="nav nav-sidebar">
+    {% for playlist in latest_playlist %}
+      {% if forloop.first %}
+        <li><a href="#" data-playlistid="{{ playlist.id }}" class="active">{{ playlist.label }}</a></li>
+      {% else %}
+        <li><a href="#" data-playlistid="{{ playlist.id }}" >{{ playlist.label }}</a></li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No Playlists are available.</p>
+{% endif %}
+{% endblock %}
+
+<!-- start playlist details -->
+{% block listname %}
+  {% for playlist in latest_playlist %}
+    {% if forloop.first %}
+    <h2><stong data-toggle="tooltip" data-placement="bottom" title="{{ playlist.comment }}">{{ playlist.label }} </strong></h2>
+    <p class="text-xs-right">{{ playlist.create_date }} </p>
+    {% endif %}
+  {% endfor %}
+{% endblock %}
+
+{% block mainlist %}
+  {% for playlist in latest_playlist %}
+    {% if forloop.first %}
+    <table class="table table-hover" id="songlist">
+      <thead>
+        <tr class="clickable-row">
+          <th id="play_action">#</th>
+          <th id="Title"> Title </th>
+          <th id="Artist"> Artist </th>
+          <th id="Album"> Album </th>
+          <th id="Link"> Link </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for song in playlist.song_set.all reversed %}
+        <tr class="clickable-row">
+          <td data-songid="{{song.id}}">{{forloop.counter}}</td>
+          <td>{{song.song_name}}</td>
+          <td>{{song.artist_name}}</td>
+          <td>{{song.album_name}}</td>
+          <td><a href="http://music.163.com/#/song?id={{ song.netease_id}}" target="_blank">Netease</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% endif %}
+  {% endfor %}
+{% endblock %}
+
+
+{% block extratail %}
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  })
+
+  // select song to play first
+  var song_selected = 0;
+
+  $('#songlist').on('click', '.clickable-row', function(event) {
+    {% if search_result %}
+      var fCheck = $(this).find('input[type="checkbox"]');
+      fCheck.prop("checked", !fCheck.prop("checked"));
+    {% else %}
+      $(this).addClass('selected-song').siblings().removeClass('selected-song');
+      song_selected = $(this).find('td:first').data('songid');
+    {% endif %}
+  });
+
+  $('#play_btn').click(function() {
+      $.ajax({
+          url: '{% url 'musicbox:play' %}',
+          method: 'GET', // or another (GET), whatever you need
+          data: {
+              song_id: song_selected, // data you need to pass to your function
+          }
+          // success: function (data) {
+          //     // success callback
+          //     // you can process data returned by function from views.py
+          // }
+      });
+  });
+
+  $('#stop_btn').click(function() {
+      $.ajax({
+          url: '{% url 'musicbox:stop' %}',
+          method: 'GET', // or another (GET), whatever you need
+          data: {
+              song_id: song_selected, // data you need to pass to your function
+          }
+      });
+  });
+
+  $('#delete_btn').click(function() {
+      $.ajax({
+          url: '{% url 'musicbox:deleteSong' %}',
+          method: 'GET', // or another (GET), whatever you need
+          data: {
+              song_id: song_selected, // data you need to pass to your function
+          },
+          success: function (response) {
+            res = JSON.parse(response);  // Get the results sended from ajax to here
+            if (res.error) { // If the function fails
+              // Error
+              console.log('Delete failed! '+song_selected);
+            } else {  // Success
+              $('td[data-songid=' + res.song_id + ']').parent().hide();
+            }
+          }
+      });
+  });
+</script>
+{% endblock %}

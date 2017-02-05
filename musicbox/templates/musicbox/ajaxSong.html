@@ -1,0 +1,60 @@
+{% if playlist %}
+  <!-- <div class="table-responsive">
+    <table class="table table-hover" id="songlist"> -->
+      <thead>
+        <tr class="clickable-row">
+          <th id="play_action" class="hidden-xs-down">#</th>
+          <th id="Title"> Title </th>
+          <th id="Artist"> Artist </th>
+          <th id="Album" class="hidden-xs-down"> Album </th>
+          <th id="Link" class="hidden-sm-down"> Link </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for song in playlist.song_set.all reversed %}
+        <tr class="clickable-row">
+          <td data-songid="{{song.id}}" class="hidden-xs-down">{{forloop.counter}}</td>
+          <td>{{song.song_name}}</td>
+          <td>{{song.artist_name}}</td>
+          <td class="hidden-xs-down">{{song.album_name}}</td>
+          <td class="hidden-sm-down"><a href="http://music.163.com/#/song?id={{ song.netease_id}}" target="_blank">Netease</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    <!-- </table>
+  </div> -->
+{% endif %}
+
+{% if search_result %}
+<!-- <form action="{% url 'musicbox:addsongs' %}" method="post">
+  {% csrf_token %}
+  <button type="submit" class="btn btn-danger">Add</button>
+  <div class="table-responsive">
+    <table class="table table-hover" id="searchSonglist"> -->
+      <thead>
+        <tr class="clickable-row">
+          <th id="play_action" class="hidden-xs-down">#</th>
+          <th id="Title"> Title </th>
+          <th id="Artist"> Artist </th>
+          <th id="Album"> Album </th>
+          <th id="Link" class="hidden-sm-down"> Link </th>
+        </tr>
+      </thead>
+      <tbody>
+          {% for song in search_result %}
+          <tr class="clickable-row">
+            <td class="hidden-xs-down">
+              <input type="checkbox" class="hidden-xs-up" name="song{{ forloop.counter }}_to_add" id="song{{ forloop.counter }}" value="{{ song }}" />
+              <label for="song{{ forloop.counter }}">{{ forloop.counter }}</label><br />
+            </td>
+            <td>{{song.song_name}}</td>
+            <td>{{song.artist_name}}</td>
+            <td>{{song.album_name}}</td>
+            <td class="hidden-sm-down"><a href="http://music.163.com/#/song?id={{ song.netease_id}}" target="_blank">Netease</a></td>
+          </tr>
+          {% endfor %}
+      </tbody>
+    <!-- </table>
+  </div>
+</form> -->
+{% endif %}

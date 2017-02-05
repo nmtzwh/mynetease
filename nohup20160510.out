@@ -1,0 +1,493 @@
+[08/May/2016 17:40:59] "GET /musicbox HTTP/1.1" 301 0
+[08/May/2016 17:41:00] "GET /musicbox/ HTTP/1.1" 200 137242
+[08/May/2016 17:41:00] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 28931
+[08/May/2016 17:41:00] "GET /static/css/base.css HTTP/1.1" 200 3858
+[08/May/2016 17:41:00] "GET /static/css/bootstrap.css HTTP/1.1" 200 115805
+[08/May/2016 17:41:00] "GET /static/js/tether.min.js HTTP/1.1" 200 23144
+[08/May/2016 17:41:00] "GET /static/js/slideout.min.js HTTP/1.1" 200 6865
+[08/May/2016 17:41:00] "GET /static/js/bootstrap.js HTTP/1.1" 200 99695
+[08/May/2016 17:41:00] "GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2 HTTP/1.1" 200 71760
+Not Found: /favicon.ico
+[08/May/2016 17:41:03] "GET /favicon.ico HTTP/1.1" 404 2045
+[08/May/2016 17:41:07] "GET /musicbox/playlist/?pid=9 HTTP/1.1" 200 8702
+[08/May/2016 22:39:11] "GET /musicbox/ HTTP/1.1" 200 137242
+[08/May/2016 22:39:14] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 0
+[08/May/2016 22:39:14] "GET /static/css/base.css HTTP/1.1" 304 0
+[08/May/2016 22:39:14] "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+[08/May/2016 22:39:14] "GET /static/js/tether.min.js HTTP/1.1" 304 0
+[08/May/2016 22:39:14] "GET /static/js/slideout.min.js HTTP/1.1" 304 0
+[08/May/2016 22:39:14] "GET /static/js/bootstrap.js HTTP/1.1" 304 0
+[08/May/2016 22:39:28] "GET /musicbox/playlist/?pid=10 HTTP/1.1" 200 6130
+[08/May/2016 22:39:35] "GET /musicbox/playlist/?pid=3 HTTP/1.1" 200 5459
+[08/May/2016 22:39:41] "GET /musicbox/play/?song_id=0 HTTP/1.1" 200 16058
+[08/May/2016 22:39:49] "GET /musicbox/play/?song_id=57 HTTP/1.1" 200 16058
+/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py:67: UserWarning: A {% csrf_token %} was used in a template, but the context did not provide the value.  This is usually caused by not using RequestContext.
+  "A {% csrf_token %} was used in a template, but the context "
+
+[08/May/2016 22:41:31] "POST /musicbox/search/ HTTP/1.1" 200 52803
+[08/May/2016 22:41:48] "POST /musicbox/addsongs/ HTTP/1.1" 200 4524
+[08/May/2016 22:41:52] "GET /musicbox/play/?song_id=613 HTTP/1.1" 200 17075
+[08/May/2016 22:53:23] "GET /musicbox HTTP/1.1" 301 0
+[08/May/2016 22:53:23] "GET /musicbox/ HTTP/1.1" 200 137242
+[08/May/2016 22:53:24] "GET /static/css/base.css HTTP/1.1" 200 3858
+[08/May/2016 22:53:24] "GET /static/js/tether.min.js HTTP/1.1" 200 23144
+[08/May/2016 22:53:24] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 28931
+[08/May/2016 22:53:24] "GET /static/css/bootstrap.css HTTP/1.1" 200 115805
+[08/May/2016 22:53:24] "GET /static/js/bootstrap.js HTTP/1.1" 200 99695
+[08/May/2016 22:53:24] "GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2 HTTP/1.1" 200 71760
+Not Found: /favicon.ico
+[08/May/2016 22:53:24] "GET /favicon.ico HTTP/1.1" 404 2045
+[08/May/2016 22:53:25] "GET /musicbox/playlist/?pid=8 HTTP/1.1" 200 8710
+[08/May/2016 22:53:26] "GET /musicbox/playlist/?pid=10 HTTP/1.1" 200 6130
+[08/May/2016 22:53:26] "GET /musicbox/playlist/?pid=7 HTTP/1.1" 200 4116
+[08/May/2016 22:53:27] "GET /musicbox/playlist/?pid=3 HTTP/1.1" 200 6614
+[08/May/2016 22:53:27] "GET /musicbox/playlist/?pid=9 HTTP/1.1" 200 8702
+[08/May/2016 22:53:27] "GET /musicbox/playlist/?pid=7 HTTP/1.1" 200 4116
+[08/May/2016 22:53:28] "GET /musicbox/playlist/?pid=2 HTTP/1.1" 200 3509
+[08/May/2016 22:53:28] "GET /musicbox/playlist/?pid=7 HTTP/1.1" 200 4116
+[08/May/2016 22:53:29] "GET /musicbox/playlist/?pid=6 HTTP/1.1" 200 5515
+[08/May/2016 22:53:30] "GET /musicbox/playlist/?pid=14 HTTP/1.1" 200 19514
+[08/May/2016 22:53:31] "GET /musicbox/playlist/?pid=9 HTTP/1.1" 200 8702
+[08/May/2016 22:53:31] "GET /musicbox/playlist/?pid=7 HTTP/1.1" 200 4116
+[08/May/2016 22:53:32] "GET /musicbox/playlist/?pid=2 HTTP/1.1" 200 3509
+[08/May/2016 22:53:32] "GET /musicbox/playlist/?pid=9 HTTP/1.1" 200 8702
+[08/May/2016 22:53:32] "GET /musicbox/playlist/?pid=3 HTTP/1.1" 200 6614
+[08/May/2016 22:53:33] "GET /musicbox/playlist/?pid=13 HTTP/1.1" 200 44698
+[08/May/2016 22:53:33] "GET /musicbox/playlist/?pid=8 HTTP/1.1" 200 8710
+[08/May/2016 22:53:33] "GET /musicbox/playlist/?pid=3 HTTP/1.1" 200 6614
+[08/May/2016 22:53:34] "GET /musicbox/playlist/?pid=8 HTTP/1.1" 200 8710
+[08/May/2016 22:53:34] "GET /musicbox/playlist/?pid=6 HTTP/1.1" 200 5515
+[08/May/2016 22:53:35] "GET /musicbox/playlist/?pid=13 HTTP/1.1" 200 44698
+[08/May/2016 22:54:25] "GET /musicbox/searchPlaylist/?searchStrList=%E8%88%AA%E8%A1%8Ctsinghua HTTP/1.1" 200 12025
+[08/May/2016 22:55:15] "GET /musicbox/searchPlaylist/?searchStrList=nmtzwh HTTP/1.1" 200 533
+[08/May/2016 22:55:30] "GET /musicbox/searchPlaylist/?searchStrList=%E8%88%AA%E8%A1%8Ctsinghua%E7%9A%84%E7%BA%A2%E5%BF%83%E6%AD%8C%E6%9B%B2 HTTP/1.1" 200 12342
+[08/May/2016 22:55:46] "GET /musicbox/searchPlaylist/?searchStrList=tsinghua%E7%9A%84%E7%BA%A2%E5%BF%83%E6%AD%8C%E6%9B%B2 HTTP/1.1" 200 547
+[08/May/2016 22:55:57] "GET /musicbox/searchPlaylist/?searchStrList=Tsinghua%E7%9A%84%E7%BA%A2%E5%BF%83%E6%AD%8C%E6%9B%B2 HTTP/1.1" 200 547
+[08/May/2016 22:56:06] "POST /musicbox/addplaylist/ HTTP/1.1" 200 20775
+[08/May/2016 22:56:13] "GET /musicbox/play/?song_id=0 HTTP/1.1" 200 20775
+[08/May/2016 22:56:29] "GET /musicbox/play/?song_id=625 HTTP/1.1" 200 20775
+[08/May/2016 23:12:43] "GET /musicbox/play/?song_id=632 HTTP/1.1" 200 20775
+[08/May/2016 23:13:24] "GET /musicbox/play/?song_id=617 HTTP/1.1" 200 20775
+[08/May/2016 23:14:17] "GET /musicbox/stop/?song_id=617 HTTP/1.1" 200 20775
+[09/May/2016 12:14:17] "GET /musicbox HTTP/1.1" 301 0
+[09/May/2016 12:14:17] "GET /musicbox/ HTTP/1.1" 200 20775
+[09/May/2016 12:14:17] "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+[09/May/2016 12:14:17] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 0
+[09/May/2016 12:14:17] "GET /static/css/base.css HTTP/1.1" 304 0
+[09/May/2016 12:14:17] "GET /static/js/tether.min.js HTTP/1.1" 304 0
+[09/May/2016 12:14:17] "GET /static/js/slideout.min.js HTTP/1.1" 304 0
+[09/May/2016 12:14:17] "GET /static/js/bootstrap.js HTTP/1.1" 304 0
+[09/May/2016 12:14:17] "GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2 HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[09/May/2016 12:14:19] "GET /favicon.ico HTTP/1.1" 404 2045
+[09/May/2016 12:14:47] "POST /musicbox/addplaylist/ HTTP/1.1" 200 13180
+Internal Server Error: /musicbox/search/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view musicbox.views.search didn't return an HttpResponse object. It returned None instead.
+[09/May/2016 12:15:05] "POST /musicbox/search/ HTTP/1.1" 500 13064
+Internal Server Error: /musicbox/search/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view musicbox.views.search didn't return an HttpResponse object. It returned None instead.
+[09/May/2016 12:15:09] "POST /musicbox/search/ HTTP/1.1" 500 13064
+Internal Server Error: /musicbox/search/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view musicbox.views.search didn't return an HttpResponse object. It returned None instead.
+[09/May/2016 12:15:22] "POST /musicbox/search/ HTTP/1.1" 500 13064
+Internal Server Error: /musicbox/search/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view musicbox.views.search didn't return an HttpResponse object. It returned None instead.
+[09/May/2016 12:15:26] "POST /musicbox/search/ HTTP/1.1" 500 13064
+Internal Server Error: /musicbox/search/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view musicbox.views.search didn't return an HttpResponse object. It returned None instead.
+[09/May/2016 12:15:27] "POST /musicbox/search/ HTTP/1.1" 500 13064
+Internal Server Error: /musicbox/search/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view musicbox.views.search didn't return an HttpResponse object. It returned None instead.
+[09/May/2016 12:15:27] "POST /musicbox/search/ HTTP/1.1" 500 13064
+Internal Server Error: /musicbox/search/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view musicbox.views.search didn't return an HttpResponse object. It returned None instead.
+[09/May/2016 12:15:29] "POST /musicbox/search/ HTTP/1.1" 500 13064
+Internal Server Error: /musicbox/search/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view musicbox.views.search didn't return an HttpResponse object. It returned None instead.
+[09/May/2016 12:15:31] "POST /musicbox/search/ HTTP/1.1" 500 13064
+Internal Server Error: /musicbox/search/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view musicbox.views.search didn't return an HttpResponse object. It returned None instead.
+[09/May/2016 12:15:32] "POST /musicbox/search/ HTTP/1.1" 500 13064
+Internal Server Error: /musicbox/search/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view musicbox.views.search didn't return an HttpResponse object. It returned None instead.
+[09/May/2016 12:15:37] "POST /musicbox/search/ HTTP/1.1" 500 13064
+Internal Server Error: /musicbox/search/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view musicbox.views.search didn't return an HttpResponse object. It returned None instead.
+[09/May/2016 12:15:38] "POST /musicbox/search/ HTTP/1.1" 500 13057
+Internal Server Error: /musicbox/search/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view musicbox.views.search didn't return an HttpResponse object. It returned None instead.
+[09/May/2016 12:15:40] "POST /musicbox/search/ HTTP/1.1" 500 13057
+Internal Server Error: /musicbox/search/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view musicbox.views.search didn't return an HttpResponse object. It returned None instead.
+[09/May/2016 12:15:40] "POST /musicbox/search/ HTTP/1.1" 500 13057
+Internal Server Error: /musicbox/search/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view musicbox.views.search didn't return an HttpResponse object. It returned None instead.
+[09/May/2016 12:15:41] "POST /musicbox/search/ HTTP/1.1" 500 13057
+Internal Server Error: /musicbox/search/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view musicbox.views.search didn't return an HttpResponse object. It returned None instead.
+[09/May/2016 12:15:42] "POST /musicbox/search/ HTTP/1.1" 500 13057
+Internal Server Error: /musicbox/search/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view musicbox.views.search didn't return an HttpResponse object. It returned None instead.
+[09/May/2016 12:15:48] "POST /musicbox/search/ HTTP/1.1" 500 13057
+Internal Server Error: /musicbox/search/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view musicbox.views.search didn't return an HttpResponse object. It returned None instead.
+Internal Server Error: /musicbox/search/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view musicbox.views.search didn't return an HttpResponse object. It returned None instead.
+[09/May/2016 12:15:50] "POST /musicbox/search/ HTTP/1.1" 500 13057
+[09/May/2016 12:15:50] "POST /musicbox/search/ HTTP/1.1" 500 13057
+Internal Server Error: /musicbox/search/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view musicbox.views.search didn't return an HttpResponse object. It returned None instead.
+[09/May/2016 12:15:51] "POST /musicbox/search/ HTTP/1.1" 500 13057
+[09/May/2016 12:15:52] "POST /musicbox/search/ HTTP/1.1" 200 43
+Internal Server Error: /musicbox/search/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view musicbox.views.search didn't return an HttpResponse object. It returned None instead.
+[09/May/2016 12:15:53] "POST /musicbox/search/ HTTP/1.1" 500 13057
+[09/May/2016 12:15:53] "GET /musicbox/ HTTP/1.1" 200 13180
+Internal Server Error: /musicbox/search/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view musicbox.views.search didn't return an HttpResponse object. It returned None instead.
+[09/May/2016 12:15:58] "POST /musicbox/search/ HTTP/1.1" 500 13057
+Internal Server Error: /musicbox/search/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view musicbox.views.search didn't return an HttpResponse object. It returned None instead.
+Internal Server Error: /musicbox/search/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view musicbox.views.search didn't return an HttpResponse object. It returned None instead.
+[09/May/2016 12:16:01] "POST /musicbox/search/ HTTP/1.1" 500 13057
+[09/May/2016 12:16:01] "POST /musicbox/search/ HTTP/1.1" 500 13057
+Internal Server Error: /musicbox/search/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view musicbox.views.search didn't return an HttpResponse object. It returned None instead.
+[09/May/2016 12:16:01] "POST /musicbox/search/ HTTP/1.1" 500 13057
+Internal Server Error: /musicbox/search/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view musicbox.views.search didn't return an HttpResponse object. It returned None instead.
+[09/May/2016 12:16:02] "POST /musicbox/search/ HTTP/1.1" 500 13057
+Internal Server Error: /musicbox/search/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view musicbox.views.search didn't return an HttpResponse object. It returned None instead.
+[09/May/2016 12:16:11] "POST /musicbox/search/ HTTP/1.1" 500 13052
+Internal Server Error: /musicbox/search/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view musicbox.views.search didn't return an HttpResponse object. It returned None instead.
+[09/May/2016 12:16:27] "POST /musicbox/search/ HTTP/1.1" 500 13052
+Internal Server Error: /musicbox/search/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view musicbox.views.search didn't return an HttpResponse object. It returned None instead.
+[09/May/2016 12:16:28] "POST /musicbox/search/ HTTP/1.1" 500 13052
+[09/May/2016 12:16:40] "GET /musicbox/ HTTP/1.1" 200 13180
+[09/May/2016 12:16:40] "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+[09/May/2016 12:16:40] "GET /static/css/base.css HTTP/1.1" 304 0
+[09/May/2016 12:16:40] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 0
+[09/May/2016 12:16:40] "GET /static/js/tether.min.js HTTP/1.1" 304 0
+[09/May/2016 12:16:40] "GET /static/js/bootstrap.js HTTP/1.1" 304 0
+[09/May/2016 12:16:40] "GET /static/js/slideout.min.js HTTP/1.1" 304 0
+[09/May/2016 12:16:53] "GET /musicbox/ HTTP/1.1" 200 13180
+[09/May/2016 12:16:59] "GET /musicbox/ HTTP/1.1" 200 13180
+[09/May/2016 12:16:59] "GET /static/css/base.css HTTP/1.1" 304 0
+[09/May/2016 12:16:59] "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+[09/May/2016 12:16:59] "GET /static/js/tether.min.js HTTP/1.1" 304 0
+[09/May/2016 12:16:59] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 0
+[09/May/2016 12:16:59] "GET /static/js/slideout.min.js HTTP/1.1" 304 0
+[09/May/2016 12:16:59] "GET /static/js/bootstrap.js HTTP/1.1" 304 0
+[09/May/2016 12:17:04] "GET /musicbox/1 HTTP/1.1" 301 0
+[09/May/2016 12:17:04] "GET /musicbox/1/ HTTP/1.1" 200 15558
+Internal Server Error: /musicbox/search/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view musicbox.views.search didn't return an HttpResponse object. It returned None instead.
+[09/May/2016 12:17:23] "POST /musicbox/search/ HTTP/1.1" 500 13054
+Internal Server Error: /musicbox/search/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view musicbox.views.search didn't return an HttpResponse object. It returned None instead.
+[09/May/2016 12:17:27] "POST /musicbox/search/ HTTP/1.1" 500 13054
+[09/May/2016 12:17:37] "GET /musicbox/playlist/?pid=17 HTTP/1.1" 200 10661
+[09/May/2016 12:17:39] "GET /musicbox/playlist/?pid=10 HTTP/1.1" 200 6340
+[09/May/2016 12:17:52] "GET /musicbox/ HTTP/1.1" 200 13180
+Internal Server Error: /musicbox/search/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view musicbox.views.search didn't return an HttpResponse object. It returned None instead.
+[09/May/2016 12:17:53] "POST /musicbox/search/ HTTP/1.1" 500 13054
+[09/May/2016 12:17:59] "GET /musicbox/ HTTP/1.1" 200 13180
+[09/May/2016 12:17:59] "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+[09/May/2016 12:17:59] "GET /static/css/base.css HTTP/1.1" 304 0
+[09/May/2016 12:17:59] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 0
+[09/May/2016 12:17:59] "GET /static/js/bootstrap.js HTTP/1.1" 304 0
+[09/May/2016 12:17:59] "GET /static/js/tether.min.js HTTP/1.1" 304 0
+[09/May/2016 12:17:59] "GET /static/js/slideout.min.js HTTP/1.1" 304 0
+[09/May/2016 12:19:36] "GET /musicbox HTTP/1.1" 301 0
+[09/May/2016 12:19:37] "GET /musicbox/ HTTP/1.1" 200 13180
+Not Found: /musicbox/admin
+[09/May/2016 12:19:43] "GET /musicbox/admin HTTP/1.1" 404 4224
+[09/May/2016 12:19:50] "GET /admin HTTP/1.1" 301 0
+[09/May/2016 12:19:50] "GET /admin/ HTTP/1.1" 302 0
+[09/May/2016 12:19:50] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1683
+[09/May/2016 12:19:50] "GET /static/admin/css/base.css HTTP/1.1" 200 15897
+[09/May/2016 12:19:50] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[09/May/2016 12:19:50] "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+[09/May/2016 12:19:50] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[09/May/2016 12:19:50] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+[09/May/2016 12:20:00] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 1842
+[09/May/2016 12:20:01] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+[09/May/2016 12:20:07] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[09/May/2016 12:20:08] "GET /admin/ HTTP/1.1" 200 6555
+[09/May/2016 12:20:08] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 434
+[09/May/2016 12:20:08] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[09/May/2016 12:20:08] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[09/May/2016 12:20:08] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+[09/May/2016 12:20:11] "GET /admin/musicbox/playlist/ HTTP/1.1" 200 7175
+[09/May/2016 12:20:11] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 7171
+[09/May/2016 12:20:11] "GET /static/admin/js/core.js HTTP/1.1" 200 8366
+[09/May/2016 12:20:11] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[09/May/2016 12:20:11] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6100
+[09/May/2016 12:20:11] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1538
+[09/May/2016 12:20:11] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[09/May/2016 12:20:11] "GET /static/admin/js/actions.js HTTP/1.1" 200 6259
+[09/May/2016 12:20:11] "GET /static/admin/js/urlify.js HTTP/1.1" 200 7693
+[09/May/2016 12:20:11] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 247597
+[09/May/2016 12:20:11] "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 200 62474
+[09/May/2016 12:20:12] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[09/May/2016 12:20:15] "GET /admin/musicbox/playlist/18/change/ HTTP/1.1" 200 5674
+[09/May/2016 12:20:15] "GET /static/admin/css/forms.css HTTP/1.1" 200 7750
+[09/May/2016 12:20:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[09/May/2016 12:20:15] "GET /static/admin/js/calendar.js HTTP/1.1" 200 6875
+[09/May/2016 12:20:15] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 18563
+[09/May/2016 12:20:15] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[09/May/2016 12:20:16] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[09/May/2016 12:20:16] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[09/May/2016 12:20:20] "GET /admin/musicbox/playlist/18/delete/ HTTP/1.1" 200 2303
+[09/May/2016 12:20:21] "POST /admin/musicbox/playlist/18/delete/ HTTP/1.1" 302 0
+[09/May/2016 12:20:22] "GET /admin/musicbox/playlist/ HTTP/1.1" 200 7097
+[09/May/2016 12:20:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[09/May/2016 12:20:22] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[09/May/2016 12:20:32] "GET /musicbox HTTP/1.1" 301 0
+[09/May/2016 12:20:32] "GET /musicbox/ HTTP/1.1" 200 20775
+[09/May/2016 12:20:39] "GET /musicbox/playlist/?pid=2 HTTP/1.1" 200 3633
+[09/May/2016 12:21:21] "POST /musicbox/search/ HTTP/1.1" 200 50239
+[09/May/2016 12:21:37] "POST /musicbox/addsongs/ HTTP/1.1" 200 5328
+[09/May/2016 12:21:40] "GET /musicbox/play/?song_id=647 HTTP/1.1" 200 17965
+[09/May/2016 12:21:57] "GET /musicbox/searchPlaylist/?searchStrList=allan+taylor HTTP/1.1" 200 11486
+[09/May/2016 12:22:11] "GET /musicbox/stop/?song_id=647 HTTP/1.1" 200 17965
+[09/May/2016 12:22:31] "POST /musicbox/addplaylist/ HTTP/1.1" 200 13194
+[09/May/2016 12:22:42] "GET /musicbox/ HTTP/1.1" 200 13194
+[09/May/2016 12:22:54] "POST /musicbox/search/ HTTP/1.1" 200 50239
+[09/May/2016 12:23:02] "POST /musicbox/addsongs/ HTTP/1.1" 200 2907
+[09/May/2016 22:36:42] "GET /musicbox/playlist/?pid=19 HTTP/1.1" 200 4731
+[09/May/2016 22:36:44] "GET /musicbox/ HTTP/1.1" 200 15620
+[09/May/2016 22:36:44] "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+[09/May/2016 22:36:44] "GET /static/css/base.css HTTP/1.1" 304 0
+[09/May/2016 22:36:44] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 0
+[09/May/2016 22:36:45] "GET /static/js/tether.min.js HTTP/1.1" 304 0
+[09/May/2016 22:36:45] "GET /static/js/bootstrap.js HTTP/1.1" 304 0
+[09/May/2016 22:36:45] "GET /static/js/slideout.min.js HTTP/1.1" 304 0
+[09/May/2016 22:36:58] "GET /musicbox/play/?song_id=0 HTTP/1.1" 200 15620
+[09/May/2016 23:07:48] "GET /musicbox/playlist/?pid=15 HTTP/1.1" 200 139471
+[09/May/2016 23:07:53] "GET /musicbox/playlist/?pid=19 HTTP/1.1" 200 4731
+[09/May/2016 23:08:07] "GET /musicbox/playlist/?pid=15 HTTP/1.1" 200 139471
+[09/May/2016 23:08:30] "GET /musicbox/searchPlaylist/?searchStrList=%E8%88%AA%E8%A1%8Ctsinghua%E5%96%9C%E7%88%B1 HTTP/1.1" 200 13021
+Internal Server Error: /musicbox/searchPlaylist/
+Traceback (most recent call last):
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/tom/python_env/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/tom/python_env/mynetease/musicbox/views.py", line 226, in searchPlaylist
+    listinfo = getListInfo(request.GET['searchStrList'])  # add search type in the future!!!
+  File "/root/tom/python_env/mynetease/musicbox/views.py", line 215, in getListInfo
+    return netease.dig_info(data['result']['playlists'], 'top_playlists')
+KeyError: 'playlists'
+[09/May/2016 23:08:44] "GET /musicbox/searchPlaylist/?searchStrList=%E8%88%AA%E8%A1%8Ctsinghua%E5%96%9C%E6%AC%A2%E7%9A%84%E9%9F%B3%E4%B9%90 HTTP/1.1" 500 13646
+[09/May/2016 23:09:06] "GET /musicbox/playlist/?pid=6 HTTP/1.1" 200 5732
+[10/May/2016 08:12:16] "GET /musicbox/ HTTP/1.1" 200 15620
+[10/May/2016 08:12:16] "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+[10/May/2016 08:12:16] "GET /static/css/base.css HTTP/1.1" 304 0
+[10/May/2016 08:12:16] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 0
+[10/May/2016 08:12:16] "GET /static/js/tether.min.js HTTP/1.1" 304 0
+[10/May/2016 08:12:16] "GET /static/js/bootstrap.js HTTP/1.1" 304 0
+[10/May/2016 08:12:16] "GET /static/js/slideout.min.js HTTP/1.1" 304 0
+[10/May/2016 08:12:17] "GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2 HTTP/1.1" 304 0
+[10/May/2016 08:12:22] "GET /musicbox/play/?song_id=648 HTTP/1.1" 200 15620
+[10/May/2016 08:25:39] "GET /musicbox/stop/?song_id=652 HTTP/1.1" 200 15620
+Not Found: /favicon.ico
+[10/May/2016 21:44:45] "GET /favicon.ico HTTP/1.1" 404 2045
+Not Found: /favicon.ico
+[10/May/2016 21:51:49] "GET /favicon.ico HTTP/1.1" 404 2045
+[10/May/2016 21:51:49] "GET /musicbox/playlist/?pid=10 HTTP/1.1" 200 6347
+[10/May/2016 21:51:51] "GET /musicbox/playlist/?pid=19 HTTP/1.1" 200 4731
+[10/May/2016 21:51:52] "GET /musicbox/playlist/?pid=1 HTTP/1.1" 200 4922
+[10/May/2016 21:51:53] "GET /musicbox/playlist/?pid=2 HTTP/1.1" 200 7374
+[10/May/2016 21:51:54] "GET /musicbox/playlist/?pid=13 HTTP/1.1" 200 44915
+[10/May/2016 21:52:46] "POST /musicbox/addplaylist/ HTTP/1.1" 200 13249
+[10/May/2016 21:52:46] "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+[10/May/2016 21:52:46] "GET /static/css/base.css HTTP/1.1" 304 0
+[10/May/2016 21:52:46] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 0
+[10/May/2016 21:52:46] "GET /static/js/tether.min.js HTTP/1.1" 304 0
+[10/May/2016 21:52:46] "GET /static/js/bootstrap.js HTTP/1.1" 304 0
+[10/May/2016 21:52:46] "GET /static/js/slideout.min.js HTTP/1.1" 304 0
+[10/May/2016 21:52:52] "GET /static/css/bootstrap.css.map HTTP/1.1" 200 49447
+[10/May/2016 21:54:58] "GET /musicbox/ HTTP/1.1" 200 13249
+[10/May/2016 21:54:59] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 0
+[10/May/2016 21:54:59] "GET /static/js/tether.min.js HTTP/1.1" 304 0
+[10/May/2016 21:54:59] "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+[10/May/2016 21:54:59] "GET /static/js/slideout.min.js HTTP/1.1" 304 0
+[10/May/2016 21:54:59] "GET /static/css/base.css HTTP/1.1" 304 0
+[10/May/2016 21:54:59] "GET /static/js/bootstrap.js HTTP/1.1" 304 0
+[10/May/2016 21:56:47] "POST /musicbox/search/ HTTP/1.1" 200 54225
+[10/May/2016 21:56:55] "POST /musicbox/search/ HTTP/1.1" 200 54225
+Not Found: /favicon.ico
+[10/May/2016 21:57:12] "GET /favicon.ico HTTP/1.1" 404 2045
+[10/May/2016 21:57:13] "GET /musicbox/playlist/?pid=15 HTTP/1.1" 200 139566
+[10/May/2016 21:57:18] "POST /musicbox/search/ HTTP/1.1" 200 54225
+[10/May/2016 21:57:23] "GET /musicbox/playlist/?pid=20 HTTP/1.1" 200 2242
+[10/May/2016 21:57:28] "POST /musicbox/search/ HTTP/1.1" 200 54225
+[10/May/2016 21:58:14] "POST /musicbox/search/ HTTP/1.1" 200 43
+[10/May/2016 21:58:22] "GET /musicbox/playlist/?pid=19 HTTP/1.1" 200 4826
+[10/May/2016 21:58:25] "POST /musicbox/search/ HTTP/1.1" 200 43
+[10/May/2016 21:58:31] "POST /musicbox/search/ HTTP/1.1" 200 54225
+[10/May/2016 21:58:37] "GET /musicbox/playlist/?pid=20 HTTP/1.1" 200 2242
+[10/May/2016 21:58:42] "POST /musicbox/search/ HTTP/1.1" 200 54225
+[10/May/2016 22:02:29] "GET /musicbox/playlist/?pid=14 HTTP/1.1" 200 19826
+[10/May/2016 22:02:35] "POST /musicbox/search/ HTTP/1.1" 200 54225
+[10/May/2016 22:04:59] "GET /musicbox/playlist/?pid=20 HTTP/1.1" 200 2242
+[10/May/2016 22:05:09] "GET /musicbox/playlist/?pid=15 HTTP/1.1" 200 139566
+[10/May/2016 22:05:11] "GET /musicbox/playlist/?pid=20 HTTP/1.1" 200 2242
+[10/May/2016 22:06:21] "GET /musicbox/searchPlaylist/?searchStrList=yang HTTP/1.1" 200 11924
+[10/May/2016 22:09:23] "GET /musicbox HTTP/1.1" 301 0
+[10/May/2016 22:09:23] "GET /musicbox/ HTTP/1.1" 200 13249
+[10/May/2016 22:09:23] "GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2 HTTP/1.1" 304 0
+[10/May/2016 22:09:29] "POST /musicbox/search/ HTTP/1.1" 200 54225
+[10/May/2016 22:10:18] "POST /musicbox/addsongs/ HTTP/1.1" 200 5901
+[10/May/2016 22:10:26] "GET /musicbox/play/?song_id=656 HTTP/1.1" 200 18669
+[10/May/2016 22:10:41] "GET /musicbox/play/?song_id=656 HTTP/1.1" 200 18669
+[10/May/2016 22:11:01] "POST /musicbox/addplaylist/ HTTP/1.1" 200 13314
+[10/May/2016 22:11:08] "POST /musicbox/search/ HTTP/1.1" 200 54751
+[10/May/2016 22:11:19] "GET /musicbox/playlist/?pid=20 HTTP/1.1" 200 8642
+[10/May/2016 22:11:20] "GET /musicbox/playlist/?pid=21 HTTP/1.1" 200 2329
+[10/May/2016 22:11:43] "GET /admin/ HTTP/1.1" 302 0
+[10/May/2016 22:11:44] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1683
+[10/May/2016 22:11:44] "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+[10/May/2016 22:11:44] "GET /static/admin/css/base.css HTTP/1.1" 200 15897
+[10/May/2016 22:11:44] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[10/May/2016 22:11:44] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+[10/May/2016 22:11:44] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[10/May/2016 22:11:51] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[10/May/2016 22:11:52] "GET /admin/ HTTP/1.1" 200 6503
+[10/May/2016 22:11:52] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 434
+[10/May/2016 22:11:52] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[10/May/2016 22:11:52] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[10/May/2016 22:11:52] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+[10/May/2016 22:11:52] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+[10/May/2016 22:11:55] "GET /admin/musicbox/playlist/ HTTP/1.1" 200 7644
+[10/May/2016 22:11:55] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6100
+[10/May/2016 22:11:55] "GET /static/admin/js/core.js HTTP/1.1" 200 8366
+[10/May/2016 22:11:55] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 7171
+[10/May/2016 22:11:55] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[10/May/2016 22:11:55] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[10/May/2016 22:11:55] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 247597
+[10/May/2016 22:11:55] "GET /static/admin/js/actions.js HTTP/1.1" 200 6259
+[10/May/2016 22:11:55] "GET /static/admin/js/urlify.js HTTP/1.1" 200 7693
+[10/May/2016 22:11:55] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1538
+[10/May/2016 22:11:55] "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 200 62474
+[10/May/2016 22:11:55] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[10/May/2016 22:12:05] "POST /admin/musicbox/playlist/ HTTP/1.1" 200 2447
+[10/May/2016 22:12:06] "POST /admin/musicbox/playlist/ HTTP/1.1" 302 0
+[10/May/2016 22:12:06] "GET /admin/musicbox/playlist/ HTTP/1.1" 200 7541
+[10/May/2016 22:12:06] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[10/May/2016 22:12:06] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[10/May/2016 22:13:01] "GET /musicbox/ HTTP/1.1" 200 18669
+[10/May/2016 22:13:01] "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+[10/May/2016 22:13:01] "GET /static/css/base.css HTTP/1.1" 304 0
+[10/May/2016 22:13:01] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 0
+[10/May/2016 22:13:01] "GET /static/js/tether.min.js HTTP/1.1" 304 0
+[10/May/2016 22:13:01] "GET /static/js/bootstrap.js HTTP/1.1" 304 0
+[10/May/2016 22:13:01] "GET /static/js/slideout.min.js HTTP/1.1" 304 0
+[10/May/2016 22:14:57] "GET /admin/musicbox/playlist/ HTTP/1.1" 200 7417
+[10/May/2016 22:14:58] "GET /admin/ HTTP/1.1" 200 6461
+[10/May/2016 22:14:59] "GET /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[10/May/2016 22:14:59] "GET /admin/ HTTP/1.1" 200 6461
+[10/May/2016 22:15:02] "GET /musicbox/playlist/?pid=20 HTTP/1.1" 200 8555
+[10/May/2016 22:15:12] "GET /musicbox/playlist/?pid=19 HTTP/1.1" 200 4826
+[10/May/2016 22:15:15] "GET /musicbox/playlist/?pid=20 HTTP/1.1" 200 8555
+[10/May/2016 22:15:20] "GET /musicbox/play/?song_id=667 HTTP/1.1" 200 18669
+[10/May/2016 22:33:01] "GET /musicbox/stop/?song_id=667 HTTP/1.1" 200 18669

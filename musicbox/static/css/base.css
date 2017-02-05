@@ -1,0 +1,302 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #2E6891;
+  width: 100%;
+  height: 100%;
+}
+body, html {
+    height: 100%;
+    /*overflow:hidden;*/
+}
+
+.slideout-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 256px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+  background-color: #373A3C;
+}
+
+.slideout-panel {
+  position:relative;
+  z-index: 1;
+  will-change: transform;
+  background-color: #2E6891;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}
+
+@media screen and (min-width: 780px) {
+  .slideout-panel {
+    margin-left: 256px;
+  }
+
+  .slideout-menu {
+    display: block;
+  }
+
+  .btn-hamburger {
+    display: none;
+  }
+}
+
+/* fixed footer styles
+-------------------------------------------------- */
+.footer {
+  position: fixed;
+  height: 50px;
+  bottom: 0;
+  width: 100%;
+  background-color: #373A3C;
+}
+.footer .navbar-nav {
+  float: none;
+  text-align: center;
+}
+
+.footer .navbar-nav li {
+  float: none;
+  display: inline-block;
+}
+
+/*button in footer */
+
+.footer .btn {
+	background: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+	padding: 5px 15px;
+  border: 2px solid #2E6891;
+	color: #2E6891;
+}
+.footer .btn:hover, .btn:focus, .btn:active, .btn.active{
+	color: #33a6cc;
+	border-color: #33a6cc;
+}
+.footer .btn:active, .btn.active {
+	border-color: #d7dbe0;
+	color: #d7dbe0;
+	box-shadow: none;
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+@media (min-width: 992px) {
+    /* CSS goes here */
+    .marquee {
+      margin-left: 200px;
+      margin-top: 2px;
+    }
+}
+
+.marquee {
+  display: none;
+  max-width: 500px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #000;
+
+  padding-left: 50px;
+  padding-right: 50px;
+
+  background-color: #222;
+
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+
+  -webkit-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, .5), 0px 1px 0px rgba(250, 250, 250, .2);
+  box-shadow: inset 0px 2px 2px rgba(0, 0, 0, .5), 0px 1px 0px rgba(250, 250, 250, .2);
+}
+
+.marquee p {
+  /*position: absolute;*/
+  font-family: Tahoma, Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 0px #000000;
+  filter: dropshadow(color=#000000, offx=1, offy=1);
+
+  transform:translateX(100%);
+  animation: left-one 20s ease infinite;
+}
+
+@keyframes left-one {
+  0%  {
+    transform:translateX(100%);
+  }
+  20% {
+    transform:translateX(0);
+  }
+  60% {
+    transform:translateX(0);
+  }
+  80% {
+    transform:translateX(-100%);
+  }
+  100%{
+    transform:translateX(-100%);
+  }
+}
+
+/*
+ * Sidebar
+ */
+/*sidebar wrapper*/
+
+/* Hide for mobile, show later */
+.menu section{
+  height: 100%;
+  padding-top: 60px;
+}
+
+.sidebar {
+  /*height: 100%;*/
+  background-color: #373A3C;
+  border-right: 0px solid #2E6891;
+}
+
+.sidebar li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+.sidebar li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+.sidebar li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(46,104,145,0.2); /*rgba(255,255,255,0.2);*/
+}
+
+.sidebar li a:active,
+.sidebar li a:focus {
+    text-decoration: none;
+}
+
+.sidebar li a.active {
+    color: #fff;
+    /*background: rgba(46,104,145,1.0);*/
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #428bca;
+}
+
+@media (min-width: 768px) {
+  .sidebar{
+    background-color: #373A3C;
+    border-right: 0px solid #2E6891;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*song list css*/
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #2A7FB5;
+  cursor: pointer;
+}
+.table-hover tbody tr.selected-song td{
+  background-color: #2A7FB5;
+}
+.table > tbody > tr > td {
+  vertical-align: middle;
+}
+#songlist thead th, #songlist tbody td{
+  border-color: #2A7FB5;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+/*.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}*/

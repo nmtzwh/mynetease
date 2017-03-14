@@ -53,7 +53,7 @@ def index(request):
     cache.set('playlist_now', pid, None)
     cache.set('playlists', Playlist.objects.order_by('-create_date'), None)
     context = {
-        'playlist': get_object_or_404(Playlist, pk=cache.get('playlist_now')),
+        'playlist': changeUrlInPlaylist(get_object_or_404(Playlist, pk=cache.get('playlist_now'))),
         'playlists': cache.get('playlists')
     }
     return render(request, 'musicbox/playlist.html', context)
@@ -185,6 +185,7 @@ def addsongs(request):
                                      netease_id = song['netease_id'])
     # generate mp3_urls for front-end
     songInfo = []
+    playlist = changeUrlInPlaylist(playlist)
     for song in playlist.song_set.all():
         dict_temp = {"title" : song.song_name, "artist" : song.artist_name, "source" : song.mp3_url, "songid" : song.id, "status" : "live"}
         songInfo.append(dict_temp)
@@ -264,7 +265,7 @@ def searchPlaylist(request):
 
 # ajax change playlist
 def changePlaylist(request):
-    playlist = get_object_or_404(Playlist, pk=request.GET['pid'])
+    playlist = changeUrlInPlaylist(get_object_or_404(Playlist, pk=request.GET['pid']))
     cache.set('playlist_now', request.GET['pid'], None)
     playlists = cache.get('playlists')
     # generate mp3_urls for front-end

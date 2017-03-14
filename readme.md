@@ -1,5 +1,11 @@
 ## Music Box for raspberry pi
 
+### new api 2017.03.14
+
+1. using new api(mp3_url) from [mellplayer](https://github.com/Mellcap/MellPlayer);
+2. refresh playlist with new url, leave other methods untouched;
+
+
 ### fixes 2017.02.04
 
 todos

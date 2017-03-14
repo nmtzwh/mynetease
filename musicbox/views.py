@@ -11,12 +11,30 @@ from django.core.cache import cache
 from django.utils import timezone
 from .models import Playlist, Song
 import json
+
 # netease api
 import ast
 import musicbox.api
 import musicbox.player
 netease = musicbox.api.NetEase()
 musicPlayer = musicbox.player.Player()
+
+# new api from https://github.com/Mellcap/MellPlayer
+import newApi
+api_new = newApi.Netease()
+
+def changeUrlInPlaylist(playlist):
+    # get song id in a playlist
+    ids = []
+    for song in playlist.song_set.all:
+        ids.append(song.netease_id)
+    # get new urls
+    data = api_new.song_detail_new(ids)
+    song_details = api_new.parse_info(data=data, parse_type='song_detail_new')
+    # change url in list
+    for song in playlist.song_set.all:
+        song.mp3_url = song_details.get(song.netease_id, None)['song_url']
+    return playlist
 
 # def initPlaylistId():
 #     pid = Playlist.objects.order_by('-create_date')[0].id
@@ -65,6 +83,7 @@ def playlist(request, playlist_id):
     playlist = get_object_or_404(Playlist, pk=playlist_id)
     cache.set('playlist_now', playlist_id, None)
     playlists = cache.get('playlists')
+    playlist = changeUrlInPlaylist(playlist)
     return render(request, 'musicbox/playlist.html', {'playlist': playlist, 'playlists': playlists})
 
 ################################################################################

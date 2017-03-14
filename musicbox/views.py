@@ -26,14 +26,17 @@ api_new = newApi.Netease()
 def changeUrlInPlaylist(playlist):
     # get song id in a playlist
     ids = []
-    for song in playlist.song_set.all:
+    for song in playlist.song_set.all():
         ids.append(song.netease_id)
     # get new urls
     data = api_new.song_detail_new(ids)
     song_details = api_new.parse_info(data=data, parse_type='song_detail_new')
     # change url in list
-    for song in playlist.song_set.all:
-        song.mp3_url = song_details.get(song.netease_id, None)['song_url']
+    for song in playlist.song_set.all():
+        mp3Url = song_details.get(song.netease_id, None)['song_url']
+        if song.mp3_url != mp3Url:
+            song.mp3_url = mp3Url
+            song.save()
     return playlist
 
 # def initPlaylistId():

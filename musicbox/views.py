@@ -34,7 +34,7 @@ def changeUrlInPlaylist(playlist):
     # change url in list
     for song in playlist.song_set.all():
         mp3Url = song_details.get(song.netease_id, None)['song_url']
-        if song.mp3_url != mp3Url:
+        if mp3Url != None and song.mp3_url != mp3Url:
             song.mp3_url = mp3Url
             song.save()
     return playlist

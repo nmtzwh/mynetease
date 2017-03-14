@@ -41,34 +41,34 @@ class Player:
             except:
                 return
 
-    def playUrl(self, url_list):
-        # http://linux.die.net/man/1/mpg123
-        para = ['mpg123', '-f', '1000']
-        for url in url_list:
-            para.append(str(url))
-        # print para
-        if self.playing_flag: self.popen_handler.kill()
-        while True:
-            try:
-                self.popen_handler = subprocess.Popen(para, stdin=subprocess.PIPE,
-                                                            stdout=subprocess.PIPE,
-                                                            stderr=subprocess.PIPE)
-                self.playing_flag = True
-                self.stop_flag = False
-                break
-            except socket.error, e:
-                if isinstance(e.args, tuple):
-                    print "errno is %d" % e[0]
-                    if e[0] == errno.EPIPE:
-                       # remote peer disconnected
-                       print "Detected remote disconnect"
-                    else:
-                       # determine and handle different error
-                       pass
-                else:
-                    print "socket error ", e
-                self.popen_handler.close()
-            except IOError, e:
-                    # Hmmm, Can IOError actually be raised by the socket module?
-                    print "Got IOError: ", e
-                    break
+    # def playUrl(self, url_list):
+    #     # http://linux.die.net/man/1/mpg123
+    #     para = ['mpg123', '-f', '1000']
+    #     for url in url_list:
+    #         para.append(str(url))
+    #     # print para
+    #     if self.playing_flag: self.popen_handler.kill()
+    #     while True:
+    #         try:
+    #             self.popen_handler = subprocess.Popen(para, stdin=subprocess.PIPE,
+    #                                                         stdout=subprocess.PIPE,
+    #                                                         stderr=subprocess.PIPE)
+    #             self.playing_flag = True
+    #             self.stop_flag = False
+    #             break
+    #         except socket.error, e:
+    #             if isinstance(e.args, tuple):
+    #                 print "errno is %d" % e[0]
+    #                 if e[0] == errno.EPIPE:
+    #                    # remote peer disconnected
+    #                    print "Detected remote disconnect"
+    #                 else:
+    #                    # determine and handle different error
+    #                    pass
+    #             else:
+    #                 print "socket error ", e
+    #             self.popen_handler.close()
+    #         except IOError, e:
+    #                 # Hmmm, Can IOError actually be raised by the socket module?
+    #                 print "Got IOError: ", e
+    #                 break

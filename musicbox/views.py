@@ -20,8 +20,8 @@ netease = musicbox.api.NetEase()
 musicPlayer = musicbox.player.Player()
 
 # new api from https://github.com/Mellcap/MellPlayer
-import newApi
-api_new = newApi.Netease()
+import musicbox.newApi
+api_new = musicbox.newApi.Netease()
 
 def changeUrlInPlaylist(playlist):
     # get song id in a playlist
